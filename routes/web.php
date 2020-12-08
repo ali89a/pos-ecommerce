@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('home');
+   
+// });
+Route::get('/', 'FrontController@index')->name('front');
+Route::get('/about', 'FrontController@about')->name('about');
+Route::get('/contact', 'FrontController@contact')->name('contact');
+Route::get('/brand', 'FrontController@brand')->name('brand');
+Route::get('/category', 'FrontController@category')->name('category');
+Route::get('/special-offer', 'FrontController@specialOffer')->name('special.offer');
 
 Auth::routes();
 Route::get('lang/{locale}', 'HomeController@lang');

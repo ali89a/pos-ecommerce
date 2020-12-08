@@ -18,7 +18,7 @@ class CreateStockOutsTable extends Migration
             $table->Integer('product_id')->unsigned();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->double('sale_price', 15, 2);
-            $table->double('quantity', 8, 2);
+            $table->Integer('quantity');
             $table->double('discount', 8, 2)->nullable();
             $table->Integer('sale_id')->unsigned();
             $table->foreign('sale_id')->references('id')->on('sales')->onDelete('cascade');

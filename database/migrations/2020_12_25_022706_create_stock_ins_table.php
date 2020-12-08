@@ -19,7 +19,7 @@ class CreateStockInsTable extends Migration
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->double('buying_price', 15, 2);
             $table->double('selling_price', 15, 2);
-            $table->double('quantity', 8, 2);
+            $table->Integer('quantity');
             $table->double('discount', 8, 2)->nullable();
             $table->string('batch_number', 50)->nullable();
             $table->date('manufactured_date')->nullable();
