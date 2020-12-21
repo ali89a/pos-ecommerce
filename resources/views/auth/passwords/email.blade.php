@@ -35,8 +35,9 @@
 
             <div class="form-holder">
                 <div class="form-left text-center">
-                    <h3>Inventory Management System</h3>
-                    <h2 class="site-description"> MS COLLECTION</h2>
+                      <h3>ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h3>
+                    {{-- <h2 class="site-description"> MS COLLECTION</h2> --}}
+                       <h2 class="site-description"> গাওয়াল</h2>
                     <div class="footer-text">
                         {{--                    <p class="credit-line visible-desktop">ডিজাইন ও ডেভলপ করেছেন: <a href="http://technovista.com.bd?ref=kmsilo" target="_blank">টেকনোভিস্তা লিমিটেড</a></p>--}}
                     </div>

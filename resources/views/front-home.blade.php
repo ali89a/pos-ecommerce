@@ -11,13 +11,13 @@
                         <!-- Slideshow Start-->
                         <div class="slideshow single-slider owl-carousel">
                             <div class="item"> <a href="#"><img class="img-responsive"
-                                        src="{{asset('front')}}/image/slider/banner-1-750x400.jpg" alt="banner 1" /></a>
+                                        src="{{asset('front')}}/image/slider/banner-02-750x400.jpg" alt="banner 1" /></a>
                             </div>
                             <div class="item"> <a href="#"><img class="img-responsive"
-                                        src="{{asset('front')}}/image/slider/banner-2-750x400.jpg" alt="banner 2" /></a>
+                                        src="{{asset('front')}}/image/slider/banner-01-750x400.jpg" alt="banner 2" /></a>
                             </div>
                             <div class="item"> <a href="#"><img class="img-responsive"
-                                        src="{{asset('front')}}/image/slider/banner-3-750x400.jpg" alt="banner 3" /></a>
+                                        src="{{asset('front')}}/image/slider/banner-03-750x400.jpg" alt="banner 3" /></a>
                             </div>
                         </div>
                         <!-- Slideshow End-->
@@ -27,10 +27,10 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="#"><img
                                             title="sample-banner1" alt="sample-banner1"
-                                            src="{{asset('front')}}/image/banner/sp-small-banner-360x185.jpg"></a></div>
+                                            src="{{asset('front')}}/image/banner/sp-small-banner01-360x185.jpg"></a></div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="#"><img
                                             title="sample-banner" alt="sample-banner"
-                                            src="{{asset('front')}}/image/banner/sp-small-banner1-360x185.jpg"></a>
+                                            src="{{asset('front')}}/image/banner/sp-small-banner-360x1851.jpg"></a>
                                 </div>
                             </div>
                         </div>

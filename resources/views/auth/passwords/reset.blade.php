@@ -19,8 +19,9 @@
         <div class="behave-table-cell text-center">
             <div class="form-holder">
                 <div class="form-left text-center">
-                    <h3>কেন্দ্রীয় স্টোর ম্যানেজমেন্ট সিস্টেম</h3>
-                    <h2 class="site-description">বাংলাদেশ ফায়ার সার্ভিস ও সিভিল ডিফেন্স</h2>
+                      <h3>ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h3>
+                    {{-- <h2 class="site-description">বাংলাদেশ ফায়ার সার্ভিস ও সিভিল ডিফেন্স</h2> --}}
+                    <h2 class="site-description"> গাওয়াল</h2>
                     <div class="footer-text">
                         {{--                    <p class="credit-line visible-desktop">ডিজাইন ও ডেভলপ করেছেন: <a href="http://technovista.com.bd?ref=kmsilo" target="_blank">টেকনোভিস্তা লিমিটেড</a></p>--}}
                     </div>
@@ -70,8 +71,8 @@
                         <button class="btn btn-primary text-uppercase">রিসেট পাসওয়ার্ড</button>
                     </form>
 
-                    <p class="credit-line visible-mobile">ডিজাইন ও ডেভলপ করেছেন: <a href="https://www.perkyrabbit.com/"
-                            target="_blank">পারকি রাবিট কর্পোরেশন লিমিটেড</a></p>
+                    {{-- <p class="credit-line visible-mobile">ডিজাইন ও ডেভলপ করেছেন: <a href="https://www.perkyrabbit.com/"
+                            target="_blank">পারকি রাবিট কর্পোরেশন লিমিটেড</a></p> --}}
                 </div>
             </div>
             <!-- /.form-holder -->

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<!-- Mirrored from demo.harnishdesign.net/html/marketshop/v3/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Sep 2020 07:56:25 GMT -->
-
 <head>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="{{ asset('front') }}/image/favicon.png" rel="icon" />
-    <title>Marketshop - eCommerce HTML Template</title>
+    <link rel="shortcut icon" href="{{ asset('front') }}/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ asset('front') }}/image/favicon.ico" type="image/x-icon">
+    <title>Gauwal - Online Shopping</title>
     <meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">
     <!-- CSS Part Start-->
     <link rel="stylesheet" type="text/css" href="{{ asset('front') }}/js/bootstrap/css/bootstrap.min.css" />
@@ -33,82 +31,12 @@
                         <div class="pull-left flip left-top">
                             <div class="links">
                                 <ul>
-                                    <li class="mobile"><i class="fa fa-phone"></i>+91 9898777656</li>
-                                    <li class="email"><a href="mailto:info@marketshop.com"><i
-                                                class="fa fa-envelope"></i>info@marketshop.com</a></li>
-                                    <li class="wrap_custom_block hidden-sm hidden-xs"><a>Custom Block<b></b></a>
-                                        <div class="dropdown-menu custom_block">
-                                            <ul>
-                                                <li>
-                                                    <table>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><img alt="" src="{{ asset('front') }}/image/banner/cms-block.jpg"></td>
-                                                                <td><img alt="" src="{{ asset('front') }}/image/banner/responsive.jpg"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <h4>CMS Blocks</h4>
-                                                                </td>
-                                                                <td>
-                                                                    <h4>Responsive Template</h4>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>This is a CMS block. You can insert any content
-                                                                    (HTML, Text, Images) Here.</td>
-                                                                <td>This is a CMS block. You can insert any content
-                                                                    (HTML, Text, Images) Here.</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><strong><a class="btn btn-default btn-sm"
-                                                                            href="#">Read More</a></strong></td>
-                                                                <td><strong><a class="btn btn-default btn-sm"
-                                                                            href="#">Read More</a></strong></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    <li class="mobile"><i class="fa fa-phone"></i>+88 01977-722530</li>
+                                    <li class="email"><a href="mailto:info.gauwal@gmail.com"><i
+                                                class="fa fa-envelope"></i>info.gauwal@gmail.com</a></li>
+                                  
                                     <li><a href="#">Wish List (0)</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
-                                </ul>
-                            </div>
-                            <div id="language" class="btn-group">
-                                <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> <img
-                                            src="{{ asset('front') }}/image/flags/gb.png" alt="English" title="English">English <i
-                                            class="fa fa-caret-down"></i></span></button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <button class="btn btn-link btn-block language-select" type="button"
-                                            name="GB"><img src="{{ asset('front') }}/image/flags/gb.png" alt="English" title="English" />
-                                            English</button>
-                                    </li>
-                                    <li>
-                                        <button class="btn btn-link btn-block language-select" type="button"
-                                            name="GB"><img src="{{ asset('front') }}/image/flags/ar.png" alt="Arabic" title="Arabic" />
-                                            Arabic</button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="currency" class="btn-group">
-                                <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> $ USD <i
-                                            class="fa fa-caret-down"></i></span></button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <button class="currency-select btn btn-link btn-block" type="button"
-                                            name="EUR">€ Euro</button>
-                                    </li>
-                                    <li>
-                                        <button class="currency-select btn btn-link btn-block" type="button"
-                                            name="GBP">£ Pound Sterling</button>
-                                    </li>
-                                    <li>
-                                        <button class="currency-select btn btn-link btn-block" type="button"
-                                            name="USD">$ US Dollar</button>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -467,9 +395,6 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu_brands dropdown"><a href="#">Brands</a></li>
-                            <li class="custom-link"><a href="#">Custom Links</a></li>
-                           
                             <li class="contact-link"><a href="{{ route('about') }}">About Us</a></li>
                             <li class="contact-link"><a href="{{ route('contact') }}">Contact Us</a></li>
                             <li class="custom-link-right"><a href="{{ route('special.offer') }}" target="_blank">Special Offers</a></li>
@@ -568,7 +493,7 @@
                             <p>Gauwal © 2020 | Design and Developed By <a href=""
                                     target="_blank">Mohammad Ali</a></p>
                         </div>
-                        <div class="social pull-right flip"> <a href="#" target="_blank"> <img data-toggle="tooltip"
+                        <div class="social pull-right flip"> <a href="https://www.facebook.com/gauwalbd" target="_blank"> <img data-toggle="tooltip"
                                     src="{{ asset('front') }}/image/socialicons/facebook.png" alt="Facebook" title="Facebook"></a> <a
                                 href="#" target="_blank"> <img data-toggle="tooltip" src="{{ asset('front') }}/image/socialicons/twitter.png"
                                     alt="Twitter" title="Twitter"> </a> <a href="#" target="_blank"> <img

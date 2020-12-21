@@ -22,8 +22,8 @@
             <div class="form-holder">
                 <div class="form-left text-center">
                     <h3>ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h3>
-                    {{-- <h2 class="site-description"> গাওয়াল</h2> --}}
-                    <h2 class="site-description"> এমএস কালেকশন</h2>
+                    <h2 class="site-description"> গাওয়াল</h2>
+                    {{-- <h2 class="site-description"> এমএস কালেকশন</h2> --}}
                     <div class="footer-text">
                         {{--                    <p class="credit-line visible-desktop">ডিজাইন ও ডেভলপ করেছেন: <a href="http://technovista.com.bd?ref=kmsilo" target="_blank">টেকনোভিস্তা লিমিটেড</a></p>--}}
                     </div>
@@ -32,10 +32,10 @@
                 </div>
                 <div class="form-right text-left">
                     <a href="{{ url('/login') }}">
-                        {{-- <img src="{{url(asset('assets\login\image\gauwal.png'))}}" alt="master.page_title"
-                            width="120"> --}}
+                        <img src="{{url(asset('assets\login\image\gauwal.png'))}}" alt="master.page_title"
+                            width="120">
 
-                            <img src="{{url(asset('assets\login\image\logo-bfscd.png'))}}" alt="master.page_title" width="120">
+                            {{-- <img src="{{url(asset('assets\login\image\logo-bfscd.png'))}}" alt="master.page_title" width="120"> --}}
                     </a>
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         @csrf
