@@ -106,6 +106,12 @@ class ProductController extends Controller
 
         $pro->barcode_path = "barcode/$label.png";
 
+        if ($request->img_url != null) {
+            $fileName = time() . '.' . $request->img_url->extension();
+            $request->img_url->move(storage_path('app/public'), $fileName);
+            $pro->img_url = $fileName;
+        }
+
         $pro->save();
 
         \Toastr::success('Product Created Successfully!.', '', ["progressbar" => true]);
@@ -164,5 +170,5 @@ class ProductController extends Controller
         return $data;
 
     }
-   
+
 }

@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="{{ asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
 <!-- JQVMap -->
 <link rel="stylesheet" href="{{ asset('admin/plugins/jqvmap/jqvmap.min.css') }}">
+@yield('style')
 <!-- Theme style -->
 <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css')}}">
 <!-- overlayScrollbars -->
@@ -36,5 +37,5 @@
         color: #fff !important;
     }
 </style>
-@yield('style')
-@stack('css-bottom')
+
+@stack('css')

@@ -24,6 +24,7 @@ class CreateProductsTable extends Migration
             $table->foreign('unit_of_measurement_id')->references('id')->on('unit_of_measurements')->onDelete('cascade');
             $table->string('name');
             $table->text('barcode_path')->nullable();
+            $table->text('img_url')->nullable();
             $table->string('short_name')->nullable();
             $table->string('code', 50)->unique();
             $table->text('description')->nullable();
