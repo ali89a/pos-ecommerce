@@ -23,6 +23,10 @@ Route::get('/contact', 'FrontController@contact')->name('contact');
 Route::get('/brand', 'FrontController@brand')->name('brand');
 Route::get('/category', 'FrontController@category')->name('category');
 Route::get('/special-offer', 'FrontController@specialOffer')->name('special.offer');
+Route::get('/cart', 'FrontController@cart')->name('cart');
+Route::get('/user-register', 'FrontController@userRegister')->name('user.register');
+Route::get('/user-login', 'FrontController@userLogin')->name('user.login');
+Route::get('/cart', 'FrontController@cart')->name('cart');
 
 Auth::routes();
 Route::get('lang/{locale}', 'HomeController@lang');
