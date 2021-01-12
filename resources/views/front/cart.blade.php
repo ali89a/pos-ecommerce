@@ -33,12 +33,12 @@
     
                                 <tr>
                                     <td class="text-center"> <a
-                                            href="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=product/product&amp;product_id=102"><img
-                                                src="https://opencart.opencartworks.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/18-47x47.jpg"
+                                            href=""><img
+                                                src="{{ asset('front') }}/image/catalog/demo/product/80/7.jpg"
                                                 alt="Pariatur porking" title="Pariatur porking" class="img-thumbnail"></a>
                                     </td>
                                     <td class="text-left"><a
-                                            href="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=product/product&amp;product_id=102">Pariatur
+                                            href="">Pariatur
                                             porking</a> <br>
                                         <small>Select: Red</small> <br>
                                         <small>Reward Points: 200</small> </td>
@@ -732,10 +732,10 @@
                 </div>
                 <div class="buttons clearfix">
                     <div class="pull-left"><a
-                            href="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=common/home"
+                            href="{{ route('front') }}home"
                             class="btn btn-default">Continue Shopping</a></div>
                     <div class="pull-right"><a
-                            href="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=checkout/checkout"
+                            href="{{ route('checkout') }}"
                             class="btn btn-primary">Checkout</a></div>
                 </div>
             </div>
