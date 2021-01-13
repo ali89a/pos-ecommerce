@@ -3,7 +3,7 @@
 @section('front-content')
 <div id="container">
     <div class="container">
-        -------feature-product-----------
+        -------Best Seller-----------
     </div>
 </div>
 @endsection

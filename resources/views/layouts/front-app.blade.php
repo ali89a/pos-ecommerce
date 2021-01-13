@@ -921,8 +921,8 @@
                                                         </li>
                                                         <li class="">
                                                             <p class="close-menu"></p>
-                                                            <a href="#" class="clearfix">
-                                                                <strong>Features</strong>
+                                                            <a href="{{ route('new.arrival') }}" class="clearfix">
+                                                                <strong>New Arrival</strong>
                                                                 <img class="label-hot"
                                                                     src="{{ asset('front') }}/image/catalog/menu/new-icon.png"
                                                                     alt="icon items">
@@ -934,13 +934,13 @@
 
                                                         <li class="">
                                                             <p class="close-menu"></p>
-                                                            <a href="#" class="clearfix">
+                                                            <a href="{{ route('best.seller') }}" class="clearfix">
                                                                 <strong>Best Sellers</strong>
                                                             </a>
                                                         </li>
                                                         <li class="">
                                                             <p class="close-menu"></p>
-                                                            <a href="#" class="clearfix">
+                                                            <a href="{{ route('feature.product') }}" class="clearfix">
                                                                 <strong>Featured Products</strong>
                                                                 <span class="label"></span>
                                                             </a>

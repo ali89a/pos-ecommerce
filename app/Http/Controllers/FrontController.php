@@ -10,9 +10,20 @@ class FrontController extends Controller
        return view('front-home');
 
    }
+   public function bestSeller(){
+       return view('front.best-seller');
+   }
+   public function featureProduct(){
+       return view('front.feature-product');
+   }
+   public function newArrival(){
+       return view('front.new-arrival');
+   }
+   public function offerZone(){
+       return view('front.offer-zone');
+   }
    public function about(){
        return view('front.about');
-
    }
    public function contact(){
        return view('front.contact');
