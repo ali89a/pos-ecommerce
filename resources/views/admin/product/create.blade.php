@@ -37,7 +37,7 @@ Product
           <!-- /.card-header -->
           <!-- form start -->
           {!! BootForm::open(['model' => $model, 'store' => 'product.store', 'update' =>
-          'product.update','class'=>'form-horizontal']);
+          'product.update','class'=>'form-horizontal','enctype'=>'multipart/form-data']);
           !!}
 
           <div class="card-body">

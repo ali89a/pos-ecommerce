@@ -114,14 +114,19 @@ class ProductController extends Controller
 
         $pro->save();
 
-        \Toastr::success('Product Created Successfully!.', '', ["progressbar" => true]);
+        \Toastr::success('Product Created Successfully!.', '', ["progressBar" => true]);
         return redirect()->route('product.index');
 
     }
 
     public function show(Product $product)
     {
-        return new ProductResource($product);
+        $data = [
+            'model' => $product,
+        ];
+
+        return view($this->path('show'), $data);
+
     }
 
     public function edit(Product $product)

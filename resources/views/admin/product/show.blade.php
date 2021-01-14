@@ -36,50 +36,36 @@ Product List
                         <table id="example1" class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>#</th>
                                     <th class="text-center">Category</th>
+                                    <td class="text-center"></td>
+                                  
+                                </tr>
+                                <tr>
+                                   
                                     <th class="text-center">Name</th>
+                                    <td class="text-center"></td>
+                                   
+                                </tr>
+                                <tr>
                                     <th class="text-center">Code</th>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
                                     <th class="text-center">Bar Code</th>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr>
                                     <th class="text-center">Image</th>
-                                    <th class="text-center">Sale Price</th>
-                                    <th>Action</th>
+                                 <td class="text-center"></td>
+                                </tr>
+                                <tr>  
+                                     <th class="text-center">Sale Price</th>
+                                   <td class="text-center"></td>
+                                 
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($products as $row)
-                                <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td class="text-center">{{ $row->product_category->name ?? ''}}</td>
-                                    <td class="text-center">{{ $row->name ?? ''}}</td>
-                                    <td class="text-center">{{ $row->code ?? ''}}</td>
-                                    <td class="text-center">
-
-                                        <img width="auto" height="auto" src="{{asset(\Storage::url($row->barcode_path))}}"
-                                            alt="{{ $row->code}}">
-                                    </td>
-                                    <td class="text-center">
-
-                                        <img width="auto" height="50" src="{{asset(\Storage::url($row->img_url))}}"
-                                            alt="{{ $row->code}}">
-                                    </td>
-                                    <td class="text-center">{{ $row->selling_price ?? ''}}</td>
-                                    <td>
-                                        @can('Role Edit')
-                                        <div class="btn-group">
-                                            <a href="{{ route('product.edit', $row->id) }}"
-                                                class="btn btn-sm btn-primary">
-                                                Edit
-                                            </a>
-                                            <a href="{{ route('product.show', $row->id) }}"
-                                                class="btn btn-sm btn-info">
-                                                Show
-                                            </a>
-                                        </div>
-                                        @endcan
-                                    </td>
-                                </tr>
-                                @endforeach
+                               
                             </tbody>
                         </table>
                     </div>
