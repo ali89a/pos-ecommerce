@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\Country;
+use App\Model\SubCategory;
 use Illuminate\Http\Request;
 
-class CountryController extends Controller
+class SubCategoryController extends Controller
 {
     protected function path(string $suffix)
     {
@@ -14,7 +14,7 @@ class CountryController extends Controller
     public function index()
     {
         $data = [
-            'countries' => Country::all(),
+            'countries' => SubCategory::all(),
         ];
         return view($this->path('index'), $data);
 
@@ -28,7 +28,7 @@ class CountryController extends Controller
     public function create()
     {
         $data = [
-            'model' => new Country,
+            'model' => new SubCategory,
         ];
 
         return view($this->path('create'), $data);
@@ -49,7 +49,7 @@ class CountryController extends Controller
             'name' => 'required|unique:countries',
         ]);
 
-        $con = new Country();
+        $con = new SubCategory();
         $con->name = $request->name;
         $con->save();
 
@@ -64,7 +64,7 @@ class CountryController extends Controller
      * @param  \App\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function show(Country $country)
+    public function show(SubCategory $country)
     {
         //
     }
@@ -75,7 +75,7 @@ class CountryController extends Controller
      * @param  \App\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function edit(Country $country)
+    public function edit(SubCategory $country)
     {
         $data = [
             'model' => $country,

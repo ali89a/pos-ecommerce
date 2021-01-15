@@ -25,10 +25,10 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{route('country.index')}}" class="nav-link {{ (Request::segment(1) == 'country' )?' active-color':''}}">
+                <a href="{{route('sub-category.index')}}" class="nav-link {{ (Request::segment(1) == 'sub-category' )?' active-color':''}}">
             
                     <i class="nav-icon fa fa-globe" aria-hidden="true"></i>
-                    <p>Country</p>
+                    <p>sub-category</p>
                 </a>
             </li>
             <li class="nav-item">
