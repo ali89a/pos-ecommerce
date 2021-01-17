@@ -1760,7 +1760,7 @@
                 </div>
             </div>
 
-            <div class="slider-brands clearfix">
+            <!-- <div class="slider-brands clearfix">
                 <div class="yt-content-slider contentslider" data-rtl="no" data-loop="yes" data-autoplay="no"
                     data-autoheight="no" data-autowidth="no" data-delay="4" data-speed="0.6" data-margin="0"
                     data-items_column0="7" data-items_column1="6" data-items_column2="3" data-items_column3="2"
@@ -1794,7 +1794,7 @@
                         <a href="#"><img src="{{ asset('front') }}/image/catalog/brands/id4-brand5.jpg" alt="brand"></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

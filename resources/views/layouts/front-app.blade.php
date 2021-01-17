@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-    <title>eMarket - Multipurpose Responsive HTML5 Template</title>
+    <title>Gauwal</title>
     <meta charset="utf-8">
     <meta name="keywords"
         content="html5 template, best html5 template, best html template, html5 basic template, multipurpose html5 template, multipurpose html template, creative html templates, creative html5 templates" />
@@ -1019,9 +1019,7 @@
                                             <br>NY Accums Fringilla
                                         </li>
                                         <li class="mail"><i class="fa fa-envelope">2</i>Email : support@domain.com</li>
-                                        <li class="phone"><i class="fa fa-mobile">3</i>Hotline 1 : 0123-456-78910
-                                            <br>Hotline 2: 0987-765-43210
-                                        </li>
+                                        <li class="phone"><i class="fa fa-mobile">3</i>Hotline : 0123-456-78910</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1104,18 +1102,18 @@
                             <div class="socials-w module">
                                 <h3 class="modtitle">Follow Us:</h3>
                                 <ul class="socials">
-                                    <li class="facebook"><a class="_blank" href="https://www.facebook.com/MagenTech"
+                                    <li class="facebook"><a class="_blank" href="#"
                                             target="_blank"><i class="fa fa-facebook"></i></a>
                                     </li>
-                                    <li class="twitter"><a class="_blank" href="https://twitter.com/smartaddons"
+                                    <li class="twitter"><a class="_blank" href="#"
                                             target="_blank"><i class="fa fa-twitter"></i></a>
                                     </li>
                                     <li class="google_plus"><a class="_blank"
-                                            href="https://plus.google.com/u/0/+Smartaddons/posts" target="_blank"><i
+                                            href="#" target="_blank"><i
                                                 class="fa fa-google-plus"></i></a>
                                     </li>
                                     <li class="pinterest"><a class="_blank"
-                                            href="https://www.pinterest.com/smartaddons/" target="_blank"><i
+                                            href="#" target="_blank"><i
                                                 class="fa fa-pinterest"></i></a>
                                     </li>
                                     <li class="youtube"><a class="_blank" href="#" target="_blank"><i
@@ -1132,8 +1130,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 copyright-w">
-                            <div class="copyright">eMarket © 2018 Demo Store. All Rights Reserved. Designed by <a
-                                    href="http://www.opencartworks.com/" target="_blank">OpenCartWorks.Com</a>
+                            <div class="copyright">Gauwal © 2021. All Rights Reserved. Developed by <a
+                                    href="#" target="_blank">Mohammad Ali</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 payment-w">
