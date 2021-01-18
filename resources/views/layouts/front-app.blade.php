@@ -60,7 +60,7 @@
                         </div>
                         <div class="header-top-right collapsed-block col-lg-6 col-md-8 col-sm-6 col-xs-5">
                             <ul class="top-link list-inline">
-                                <li class="account" id="my_account">
+                                <!-- <li class="account" id="my_account">
                                     <a href="#" title="My Account " class="btn-xs dropdown-toggle"
                                         data-toggle="dropdown"> <span>My Account </span> <span
                                             class="fa fa-caret-down"></span>
@@ -71,7 +71,7 @@
                                         <li><a href="#">Login</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="wishlist hidden-sm hidden-xs">
                                     <a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) ">
                                         <!-- <i class="fa fa-heart"></i> -->Wish List (0)
@@ -894,9 +894,6 @@
 
                                                             </a>
                                                         </li>
-
-
-
                                                         <li class="">
                                                             <p class="close-menu"></p>
                                                             <a href="{{ route('best.seller') }}" class="clearfix">
@@ -1016,7 +1013,7 @@
                                     <h3 class="modtitle">Information</h3>
                                     <div class="modcontent">
                                         <ul class="menu">
-                                            <li><a href="#">About Us</a>
+                                            <li><a href="{{ route('about') }}">About Us</a>
                                             </li>
                                             <li><a href="#">FAQ</a>
                                             </li>
