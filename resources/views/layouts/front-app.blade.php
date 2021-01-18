@@ -1036,7 +1036,7 @@
                                     <h3 class="modtitle">Services</h3>
                                     <div class="modcontent">
                                         <ul class="menu">
-                                            <li><a href="#">Contact Us</a>
+                                            <li><a href="{{ route('contact') }}">Contact Us</a>
                                             </li>
                                             <li><a href="#">Returns</a>
                                             </li>

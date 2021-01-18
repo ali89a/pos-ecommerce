@@ -9,7 +9,7 @@
 		</ul>
 		
 		<div class="row">			
-            <div id="content" class="col-sm-12 item-article">
+            <div id="content" class="col-sm-12 item-article" style="margin-bottom: 20px;">
                 <div class="row box-1-about">
                     <div class="col-md-9 welcome-about-us">
                         <div class="title-about-us">
