@@ -40,6 +40,7 @@
             font-family: 'Open Sans', sans-serif;
         }
     </style>
+    @stack('css')
 </head>
 
 <body class="common-home res layout-4">
@@ -1128,6 +1129,7 @@
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/toppanel.js"></script>
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/so_megamenu.js"></script>
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/addtocart.js"></script>
+    @stack('js')
 </body>
 
 </html>

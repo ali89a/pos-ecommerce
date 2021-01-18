@@ -1048,3 +1048,13 @@
 </div>
 <!-- //Main Container -->
 @endsection
+@push('js')
+    <script type="text/javascript">
+        if($.cookie('display')){
+            view = $.cookie('display');
+        }else{
+            view = 'grid';
+        }
+        if(view) display(view);
+    </script>
+@endpush

@@ -6,7 +6,7 @@
     <ul class="breadcrumb">
         <li><a href="{{ route('front') }}"><i class="fa fa-home"></i></a>
         </li>
-        <li><a href="{{ route('best.seller') }}">New Arrival Products</a>
+        <li><a href="{{ route('new.arrival') }}">New Arrival Products</a>
         </li>
     </ul>
     <div class="row">
@@ -1047,3 +1047,13 @@
 </div>
 <!-- //Main Container -->
 @endsection
+@push('js')
+    <script type="text/javascript">
+        if($.cookie('display')){
+            view = $.cookie('display');
+        }else{
+            view = 'grid';
+        }
+        if(view) display(view);
+    </script>
+@endpush
