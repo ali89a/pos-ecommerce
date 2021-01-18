@@ -912,7 +912,7 @@
                                                         </li>
                                                         <li class="">
                                                             <p class="close-menu"></p>
-                                                            <a href="#" class="clearfix">
+                                                            <a href="{{ route('offer.zone') }}" class="clearfix">
                                                                 <strong>Offer Zone</strong>
                                                                 <span class="label"></span>
                                                             </a>
