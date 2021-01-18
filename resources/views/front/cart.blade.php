@@ -5,17 +5,15 @@
 
       <div id="checkout-cart" class="container">
         <ul class="breadcrumb">
-            <li><a href="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=common/home"><i
-                        class="fa fa-home"></i></a></li>
-            <li><a href="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=checkout/cart">Shopping
-                    Cart</a></li>
+            <li><a href="{{ route('front') }}"><i class="fa fa-home"></i></a></li>
+            <li><a href="{{ route('cart') }}">Shopping Cart</a></li>
         </ul>
         <div class="row">
-            <div id="content" class="col-sm-12">
+            <div id="content" class="col-sm-12" style="margin-bottom: 20px;">
                 <h1>Shopping Cart
                 </h1>
                 <form
-                    action="https://opencart.opencartworks.com/themes/so_emarket/layout4/index.php?route=checkout/cart/edit"
+                    action="#"
                     method="post" enctype="multipart/form-data">
                     <div class="table-responsive">
                         <table class="table table-bordered">
@@ -33,12 +31,12 @@
     
                                 <tr>
                                     <td class="text-center"> <a
-                                            href=""><img
+                                            href="#"><img
                                                 src="{{ asset('front') }}/image/catalog/demo/product/80/7.jpg"
                                                 alt="Pariatur porking" title="Pariatur porking" class="img-thumbnail"></a>
                                     </td>
                                     <td class="text-left"><a
-                                            href="">Pariatur
+                                            href="#">Pariatur
                                             porking</a> <br>
                                         <small>Select: Red</small> <br>
                                         <small>Reward Points: 200</small> </td>
@@ -732,7 +730,7 @@
                 </div>
                 <div class="buttons clearfix">
                     <div class="pull-left"><a
-                            href="{{ route('front') }}home"
+                            href="{{ route('shop.category') }}"
                             class="btn btn-default">Continue Shopping</a></div>
                     <div class="pull-right"><a
                             href="{{ route('checkout') }}"
