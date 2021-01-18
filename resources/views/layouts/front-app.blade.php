@@ -239,7 +239,7 @@
                                                         href="{{ route('cart') }}"><i
                                                             class="fa fa-shopping-cart"></i>View
                                                         Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart"
-                                                        href="#"><i class="fa fa-share"></i>Checkout</a>
+                                                        href="{{ route('checkout') }}"><i class="fa fa-share"></i>Checkout</a>
                                                 </p>
                                             </div>
                                         </li>

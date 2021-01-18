@@ -39,12 +39,16 @@ class FrontController extends Controller
    }
    public function specialOffer(){
        return view('front.special-offer');
-
+       
    }
    public function cart(){
        return view('front.cart');
 
    }
+   public function checkout(){
+    return view('front.checkout');
+
+}
    public function userRegister(){
        return view('front.register');
 
