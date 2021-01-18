@@ -53,7 +53,7 @@
                         <div class="header-top-left col-lg-6 col-md-4 col-sm-6 col-xs-7">
                             <ul class="top-link list-inline">
                                 <li class="checkout hidden-sm hidden-xs"><a href="#" class="btn-link"
-                                        title="Checkout "><span><i class="fa fa-check-square-o"></i>Checkout </span></a>
+                                    title="mobile "><span><i class="fa fa-phone"></i>+880 1977-722531 </span></a>
                                 </li>
                             </ul>
                         </div>
@@ -94,8 +94,8 @@
                         <!-- Logo -->
                         <div class="navbar-logo col-lg-2 col-md-3 col-sm-12 col-xs-12">
                             <div class="logo">
-                                <a href="{{ route('front') }}"><img src="{{ asset('front') }}/image/catalog/logo4.png"
-                                        title="Your Store" alt="Your Store" /></a>
+                                <!-- <a href="{{ route('front') }}"><img src="{{ asset('front') }}/image/catalog/logo4.png"
+                                        title="Your Store" alt="Your Store" /></a> -->
                             </div>
                         </div>
                         <!-- //end Logo -->
@@ -881,7 +881,7 @@
                                                     <ul class="megamenu" data-transition="slide"
                                                         data-animationtime="250">
                                                         <li class="home hover">
-                                                            <a href="index.html">Home</a>
+                                                            <a href="{{ route('front') }}">Home</a>
                                                         </li>
                                                         <li class="">
                                                             <p class="close-menu"></p>
@@ -978,12 +978,10 @@
                                 <div class="module">
                                     <h3 class="modtitle">Contact Info</h3>
                                     <ul>
-                                        <li class="adres"><i class="fa fa-map-marker">1</i>Address : 123 Suspendis
-                                            mattis, Sollicit District,
-                                            <br>NY Accums Fringilla
+                                        <li class="adres"><i class="fa fa-map-marker">1</i>Address : 17/1, Monipuripara, Sangshad Avenue, Dhaka-1215 Bangladesh
                                         </li>
-                                        <li class="mail"><i class="fa fa-envelope">2</i>Email : support@domain.com</li>
-                                        <li class="phone"><i class="fa fa-mobile">3</i>Hotline : 0123-456-78910</li>
+                                        <li class="mail"><i class="fa fa-envelope">2</i>Email : info.gauwal@gmail.com</li>
+                                        <li class="phone"><i class="fa fa-phone">3</i>Hotline : +880 1977-722531</li>
                                     </ul>
                                 </div>
                             </div>
