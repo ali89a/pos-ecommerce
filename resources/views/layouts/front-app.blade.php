@@ -885,13 +885,15 @@
                                                             <a href="{{ route('front') }}">Home</a>
                                                         </li>
                                                         <li class="">
+                                                            <a href="{{ route('shop.category') }}">Shop Page</a>
+                                                        </li>
+                                                        <li class="">
                                                             <p class="close-menu"></p>
                                                             <a href="{{ route('new.arrival') }}" class="clearfix">
                                                                 <strong>New Arrival</strong>
                                                                 <img class="label-hot"
                                                                     src="{{ asset('front') }}/image/catalog/menu/new-icon.png"
                                                                     alt="icon items">
-
                                                             </a>
                                                         </li>
                                                         <li class="">

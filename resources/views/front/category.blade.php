@@ -3,9 +3,9 @@
 @section('front-content')
 <div class="main-container container">
     <ul class="breadcrumb">
-        <li><a href="#"><i class="fa fa-home"></i></a>
+        <li><a href="{{ route('front') }}"><i class="fa fa-home"></i></a>
         </li>
-        <li><a href="#">Shop Page</a>
+        <li><a href="{{ route('shop.category') }}">Shop Page</a>
         </li>
     </ul>
     <div class="row">
@@ -1384,3 +1384,13 @@
 </div>
 <!-- //Main Container -->
 @endsection
+@push('js')
+    <script type="text/javascript">
+        if($.cookie('display')){
+            view = $.cookie('display');
+        }else{
+            view = 'grid';
+        }
+        if(view) display(view);
+    </script>
+@endpush
