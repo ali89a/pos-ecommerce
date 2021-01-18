@@ -229,7 +229,7 @@
         <!--Middle Part Start-->
         <div id="content" class="col-md-9 col-sm-8">
             <div class="products-category">
-                <h3 class="title-category ">Shop Page</h3>
+                <h3 class="title-category ">Best Seller Products</h3>
                 <div class="category-derc">
                     <div class="row">
                         <div class="col-sm-12">
@@ -282,12 +282,13 @@
                             </div>
                         </div>
                         <!-- <div class="box-pagination col-md-3 col-sm-4 col-xs-12 text-right">
-                        <ul class="pagination">
-                            <li class="active"><span>1</span></li>
-                            <li><a href="">2</a></li><li><a href="">&gt;</a></li>
-                            <li><a href="">&gt;|</a></li>
-                        </ul>
-                    </div> --></div>
+                            <ul class="pagination">
+                                <li class="active"><span>1</span></li>
+                                <li><a href="">2</a></li><li><a href="">&gt;</a></li>
+                                <li><a href="">&gt;|</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
                 </div>
                 <!-- //end Filters -->
                 <!--changed listings-->
