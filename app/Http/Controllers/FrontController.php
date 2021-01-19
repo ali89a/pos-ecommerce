@@ -37,6 +37,9 @@ class FrontController extends Controller
        return view('front.brand');
 
    }
+   public function faq(){
+    return view('front.faq');
+   }
    public function specialOffer(){
        return view('front.special-offer');
        
@@ -47,8 +50,7 @@ class FrontController extends Controller
    }
    public function checkout(){
     return view('front.checkout');
-
-}
+   }
    public function userRegister(){
        return view('front.register');
 

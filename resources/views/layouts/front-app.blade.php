@@ -1000,7 +1000,7 @@
                                             </li>
                                             <li><a href="#">Specials</a>
                                             </li>
-                                            <li><a href="#">FAQs</a>
+                                            <li><a href="{{ route('faq') }}">FAQs</a>
                                             </li>
                                             <li><a href="#">Custom Link</a>
                                             </li>
@@ -1017,7 +1017,7 @@
                                         <ul class="menu">
                                             <li><a href="{{ route('about') }}">About Us</a>
                                             </li>
-                                            <li><a href="#">FAQ</a>
+                                            <li><a href="{{ route('faq') }}">FAQ</a>
                                             </li>
                                             <li><a href="#">Warranty And Services</a>
                                             </li>

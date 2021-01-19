@@ -33,6 +33,7 @@ Route::get('/offer-zones', 'FrontController@offerZone')->name('offer.zone');
 Route::get('/about', 'FrontController@about')->name('about');
 Route::get('/contact', 'FrontController@contact')->name('contact');
 Route::get('/brand', 'FrontController@brand')->name('brand');
+Route::get('/faq', 'FrontController@faq')->name('faq');
 Route::get('/shop-category', 'FrontController@category')->name('shop.category');
 Route::get('/special-offer', 'FrontController@specialOffer')->name('special.offer');
 Route::get('/cart', 'FrontController@cart')->name('cart');
