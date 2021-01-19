@@ -1019,13 +1019,13 @@
                                             </li>
                                             <li><a href="{{ route('faq') }}">FAQ</a>
                                             </li>
-                                            <li><a href="#">Warranty And Services</a>
+                                            <li><a href="{{ route('about') }}">Warranty And Services</a>
                                             </li>
-                                            <li><a href="#">Support 24/7 page</a>
+                                            <li><a href="{{ route('contact') }}">Support 24/7 page</a>
                                             </li>
                                             <li><a href="#">Product Registration</a>
                                             </li>
-                                            <li><a href="#">Product Support</a>
+                                            <li><a href="{{ route('contact') }}">Product Support</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1040,15 +1040,15 @@
                                         <ul class="menu">
                                             <li><a href="{{ route('contact') }}">Contact Us</a>
                                             </li>
-                                            <li><a href="#">Returns</a>
+                                            <li><a href="{{ route('contact') }}">Returns</a>
                                             </li>
-                                            <li><a href="#">Support</a>
+                                            <li><a href="{{ route('contact') }}">Support</a>
                                             </li>
-                                            <li><a href="#">Site Map</a>
+                                            <li><a href="{{ route('contact') }}">Site Map</a>
                                             </li>
-                                            <li><a href="#">Customer Service</a>
+                                            <li><a href="{{ route('contact') }}">Customer Service</a>
                                             </li>
-                                            <li><a href="#">Custom Link</a>
+                                            <li><a href="{{ route('contact') }}">Custom Link</a>
                                             </li>
                                         </ul>
                                     </div>
