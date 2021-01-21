@@ -49,7 +49,7 @@
                     <p>Label</p>
                 </a>
             </li>
-            <li class="nav-header">Purchase & Sales</li>
+            <li class="nav-header">Purchase & Sales info</li>
             <li class="nav-item">
                 <a href="{{route('purchase.index')}}" class="nav-link {{ (Request::segment(1) == 'purchase' )?' active-color':''}}">
                     <i class="nav-icon fa fa-shopping-cart" aria-hidden="true"></i>
@@ -68,7 +68,7 @@
                     <p>Sale</p>
                 </a>
             </li>
-            <li class="nav-header">Expense & Balance</li>
+            <li class="nav-header">Expense & Balance info</li>
             <li class="nav-item">
                 <a href="{{route('expense.index')}}" class="nav-link {{ (Request::segment(1) == 'expense' )?' active-color':''}}">
                     <i class="nav-icon fa fa-shopping-basket" aria-hidden="true"></i>
@@ -81,7 +81,7 @@
                     <p>Balance</p>
                 </a>
             </li>
-            <li class="nav-header">Expense & Balance</li>
+            <li class="nav-header">Expense & Balance info</li>
             @if( Gate::check('User List') || Gate::check('Role List'))
             <li class="nav-item has-treeview {{ ( Request::segment(1) == 'report' )?'menu-open':''}}">
                 <a href="#" class="nav-link {{ ( Request::segment(1) == 'report')?'active-color':''}}">
