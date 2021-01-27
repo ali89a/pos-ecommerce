@@ -67,13 +67,6 @@ class SubCategoryController extends Controller
     {
         //
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Country  $country
-     * @return \Illuminate\Http\Response
-     */
     public function edit(SubCategory $sub_category)
     {
         $data = [
@@ -83,14 +76,6 @@ class SubCategoryController extends Controller
 
         return view($this->path('edit'), $data);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Country  $country
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, SubCategory $sub_category)
     {
         $request->validate([

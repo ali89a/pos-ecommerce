@@ -19,12 +19,6 @@ class UnitOfMeasurementController extends Controller
         return view($this->path('index'), $data);
 
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $data = [
@@ -35,17 +29,11 @@ class UnitOfMeasurementController extends Controller
 
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
 
         $request->validate([
-            'name' => 'required|unique:countries',
+            'name' => 'required',
         ]);
 
         $unit = new UnitOfMeasurement();
@@ -56,47 +44,32 @@ class UnitOfMeasurementController extends Controller
         return redirect()->route('unit.index');
 
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Model\UnitOfMeasurement  $unitOfMeasurement
-     * @return \Illuminate\Http\Response
-     */
     public function show(UnitOfMeasurement $unitOfMeasurement)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\UnitOfMeasurement  $unitOfMeasurement
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(UnitOfMeasurement $unitOfMeasurement)
+    public function edit($id)
     {
-        //
-    }
+       
+        $data = [
+            'model' => UnitOfMeasurement::find($id),
+        ];
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\UnitOfMeasurement  $unitOfMeasurement
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, UnitOfMeasurement $unitOfMeasurement)
+        return view($this->path('edit'), $data);
+    }
+    public function update(Request $request,$id)
     {
-        //
-    }
+        $request->validate([
+            'name' => 'required',
+        ]);
+        $unitOfMeasurement=UnitOfMeasurement::find($id);
+        $unitOfMeasurement->name = $request->name;
+        $unitOfMeasurement->update();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Model\UnitOfMeasurement  $unitOfMeasurement
-     * @return \Illuminate\Http\Response
-     */
+        \Toastr::success('Unit Updated Successfully!.', '', ["progressbar" => true]);
+        return redirect()->route('unit.index');
+    }
     public function destroy(UnitOfMeasurement $unitOfMeasurement)
     {
         //

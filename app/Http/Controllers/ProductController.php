@@ -6,6 +6,7 @@ use App\Http\Resources\ProductResource;
 use App\Model\Product;
 use Illuminate\Http\Request;
 use Picqer;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -20,7 +21,6 @@ class ProductController extends Controller
             'products' => Product::all(),
         ];
         return view($this->path('index'), $data);
-
     }
 
     /**
@@ -32,7 +32,6 @@ class ProductController extends Controller
     {
 
         return Product::with('unit_of_measurement')->findOrFail($id);
-
     }
     public function fetch_product_sale($id)
     {
@@ -46,7 +45,6 @@ class ProductController extends Controller
             'stock' => \App\Classes\AvailableProductCalculation::product_id($id),
         ];
         return $data;
-
     }
     public function fetch_products_by_cat_id($id)
     {
@@ -59,18 +57,17 @@ class ProductController extends Controller
         ];
 
         return $data;
-
     }
     public function create()
     {
         $data = [
             'model' => new Product,
             'categories' => \App\Model\ProductCategory::pluck('name', 'id'),
+            'sub_categories' => \App\Model\SubCategory::pluck('name', 'id'),
             'units' => \App\Model\UnitOfMeasurement::pluck('name', 'id'),
         ];
 
         return view($this->path('create'), $data);
-
     }
 
     public function store(Request $request)
@@ -83,10 +80,13 @@ class ProductController extends Controller
         $pro = new Product();
 
         $pro->product_category_id = $request->product_category_id;
-        $pro->country_id = $request->country_id;
+        $pro->sub_category_id = $request->sub_category_id;
         $pro->unit_of_measurement_id = $request->unit_of_measurement_id;
-        $pro->product_status = $request->status;
+        $pro->status = $request->status;
+        $pro->best_seller = $request->best_seller;
+        $pro->feature = $request->feature;
         $pro->name = $request->name;
+        $pro->slug = Str::slug($request->name, '-');
         $pro->alert_quantity = $request->alert_quantity;
         $pro->selling_price = $request->selling_price;
         $pro->code = \App\Classes\ProductCode::serial_number();
@@ -99,9 +99,9 @@ class ProductController extends Controller
         $barcode = $barcode_generator->getBarcode($label, $barcode_generator::TYPE_CODE_128, 3, 50, $redColor);
         $path = storage_path("app/public/barcode/$label.png");
         file_put_contents($path, $barcode);
-//Storage::disk('local')->put($path,  $barcode);
+        //Storage::disk('local')->put($path,  $barcode);
 
-//   $path =$barcode->store('public/attach_documents');
+        //   $path =$barcode->store('public/attach_documents');
 
         $pro->barcode_path = "barcode/$label.png";
 
@@ -115,7 +115,6 @@ class ProductController extends Controller
 
         \Toastr::success('Product Created Successfully!.', '', ["progressBar" => true]);
         return redirect()->route('product.index');
-
     }
 
     public function show(Product $product)
@@ -125,15 +124,18 @@ class ProductController extends Controller
         ];
 
         return view($this->path('show'), $data);
-
     }
 
     public function edit(Product $product)
     {
-        $view = view($this->view_root . 'edit');
-        $view->with('businessType', $businessType);
-        return $view;
+        $data = [
+            'model' => $product,
+            'categories' => \App\Model\ProductCategory::pluck('name', 'id'),
+            'sub_categories' => \App\Model\SubCategory::pluck('name', 'id'),
+            'units' => \App\Model\UnitOfMeasurement::pluck('name', 'id'),
+        ];
 
+        return view($this->path('create'), $data);
     }
 
     public function update(Request $request, Product $product)
@@ -142,11 +144,26 @@ class ProductController extends Controller
             'name' => 'required',
         ]);
 
-        $businessType->fill($request->input());
-        $businessType->update();
-        Session::put('alert-success', $businessType->name . ' updated successfully');
-        return redirect()->route('business-type.index');
+        $product->product_category_id = $request->product_category_id;
+        $product->sub_category_id = $request->sub_category_id;
+        $product->unit_of_measurement_id = $request->unit_of_measurement_id;
+        $product->status = $request->status;
+        $product->best_seller = $request->best_seller;
+        $product->feature = $request->feature;
+        $product->name = $request->name;
+        $product->alert_quantity = $request->alert_quantity;
+        $product->selling_price = $request->selling_price;
+        $product->updator_user_id = \Auth::id();
+        if ($request->img_url != null) {
+            $fileName = time() . '.' . $request->img_url->extension();
+            $request->img_url->move(storage_path('app/public'), $fileName);
+            $product->img_url = $fileName;
+        }
 
+        $product->save();
+
+        \Toastr::success('Product Updated Successfully!.', '', ["progressBar" => true]);
+        return redirect()->route('product.index');
     }
 
     /**
@@ -172,7 +189,5 @@ class ProductController extends Controller
         ];
 
         return $data;
-
     }
-
 }

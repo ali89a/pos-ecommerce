@@ -47,6 +47,10 @@ Product
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                {!! BootForm::select('sub_category_id', 'Sub Category',$sub_categories, null,
+                ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 {!! BootForm::select('unit_of_measurement_id', 'Unit',$units, null,
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
               </div>
@@ -65,6 +69,18 @@ Product
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                 {!! BootForm::select('status', 'Status',['active'=>'Active','inactive'=>'Inactive'],
+                null,
+                ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                {!! BootForm::select('feature', 'Feature',['active'=>'Active','inactive'=>'Inactive'],
+                null,
+                ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                {!! BootForm::select('best_seller', 'Best Seller',['active'=>'Active','inactive'=>'Inactive'],
                 null,
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
               </div>

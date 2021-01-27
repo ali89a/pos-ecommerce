@@ -1,6 +1,6 @@
 @extends('layouts.admin-app')
 @section('title')
-Category
+Unit
 @endsection
 @section('content')
     <!-- Content Header (Page header) -->
@@ -25,7 +25,7 @@ Category
 
                             <h3 class="card-title" style="color:#115548;">Add Unit</h3>
                             <div class="card-tools">
-                                <a href="{{route('country.index')}}" ><button class="btn btn-sm btn-primary"><i class="fa fa-list" aria-hidden="true"></i> &nbsp;See List</button></a>
+                                <a href="{{route('unit.index')}}" ><button class="btn btn-sm btn-primary"><i class="fa fa-list" aria-hidden="true"></i> &nbsp;See List</button></a>
                             </div>
                         </div>
                         <!-- /.card-header -->
