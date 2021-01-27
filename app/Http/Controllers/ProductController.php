@@ -66,7 +66,6 @@ class ProductController extends Controller
         $data = [
             'model' => new Product,
             'categories' => \App\Model\ProductCategory::pluck('name', 'id'),
-            'countries' => \App\Model\Country::pluck('name', 'id'),
             'units' => \App\Model\UnitOfMeasurement::pluck('name', 'id'),
         ];
 

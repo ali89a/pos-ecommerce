@@ -9,15 +9,14 @@ class SubCategoryController extends Controller
 {
     protected function path(string $suffix)
     {
-        return "admin.country.{$suffix}";
+        return "admin.sub-category.{$suffix}";
     }
     public function index()
     {
         $data = [
-            'countries' => SubCategory::all(),
+            'sub_categories' => SubCategory::all(),
         ];
         return view($this->path('index'), $data);
-
     }
 
     /**
@@ -28,11 +27,11 @@ class SubCategoryController extends Controller
     public function create()
     {
         $data = [
+            'categories' => \App\Model\ProductCategory::pluck('name', 'id'),
             'model' => new SubCategory,
         ];
 
         return view($this->path('create'), $data);
-
     }
 
     /**
@@ -46,16 +45,16 @@ class SubCategoryController extends Controller
         // dd($request->all());
 
         $request->validate([
-            'name' => 'required|unique:countries',
+            'name' => 'required|unique:sub_categories',
         ]);
 
         $con = new SubCategory();
+        $con->category_id = $request->category_id;
         $con->name = $request->name;
         $con->save();
 
-        \Toastr::success('Country Created Successfully!.', '', ["progressbar" => true]);
-        return redirect()->route('country.index');
-
+        \Toastr::success('Sub Category Created Successfully!.', '', ["progressbar" => true]);
+        return redirect()->route('sub-category.index');
     }
 
     /**
@@ -64,7 +63,7 @@ class SubCategoryController extends Controller
      * @param  \App\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function show(SubCategory $country)
+    public function show(SubCategory $sub_category)
     {
         //
     }
@@ -75,14 +74,14 @@ class SubCategoryController extends Controller
      * @param  \App\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubCategory $country)
+    public function edit(SubCategory $sub_category)
     {
         $data = [
-            'model' => $country,
+            'categories' => \App\Model\ProductCategory::pluck('name', 'id'),
+            'model' => $sub_category,
         ];
 
         return view($this->path('edit'), $data);
-
     }
 
     /**
@@ -92,18 +91,18 @@ class SubCategoryController extends Controller
      * @param  \App\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Country $country)
+    public function update(Request $request, SubCategory $sub_category)
     {
-       $request->validate([
-    'name' => 'required|unique:countries',
-]);
+        $request->validate([
+            'name' => 'required|unique:sub_categories',
+        ]);
 
-$country->name = $request->name;
-$country->save();
+        $sub_category->category_id = $request->category_id;
+        $sub_category->name = $request->name;
+        $sub_category->save();
 
-\Toastr::success('Country Updated Successfully!.', '', ["progressbar" => true]);
-return redirect()->route('country.index');
-
+        \Toastr::success('Sub Category Updated Successfully!.', '', ["progressbar" => true]);
+        return redirect()->route('sub-category.index');
     }
 
     /**
@@ -112,7 +111,7 @@ return redirect()->route('country.index');
      * @param  \App\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Country $country)
+    public function destroy(SubCategory $sub_category)
     {
         //
     }

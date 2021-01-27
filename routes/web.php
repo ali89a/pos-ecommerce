@@ -61,7 +61,6 @@ Route::middleware('auth')->group(function () {
     Route::get('report/sale', 'ReportController@sale')->name('sale.report');
     Route::resource('category', 'ProductCategoryController');
     Route::resource('sub-category', 'SubCategoryController');
-    Route::resource('country', 'CountryController');
     Route::resource('unit', 'UnitOfMeasurementController');
     Route::resource('product', 'ProductController');
     Route::resource('purchase', 'PurchaseController');

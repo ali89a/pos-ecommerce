@@ -47,10 +47,6 @@ Product
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                {!! BootForm::select('country_id', 'Country',$countries, null,
-                ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 {!! BootForm::select('unit_of_measurement_id', 'Unit',$units, null,
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
               </div>

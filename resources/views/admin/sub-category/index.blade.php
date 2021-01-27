@@ -1,6 +1,6 @@
 @extends('layouts.admin-app')
 @section('title')
-    Country List
+    sub-category List
 @endsection
 @section('style')
 <!-- DataTables -->
@@ -25,9 +25,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title" style="color:#115548;">Country List</h3>
+                            <h3 class="card-title" style="color:#115548;">sub-category List</h3>
                             <div class="card-tools">
-                                <a href="{{route('country.create')}}" ><button class="btn btn-sm btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;Add Country</button></a>
+                                <a href="{{route('sub-category.create')}}" ><button class="btn btn-sm btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;Add sub-category</button></a>
                             </div>
                         </div>
                         <!-- /.card-header -->
@@ -36,20 +36,22 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
+                                    <th>Sub Category Name</th>
+                                    <th>Category Name</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($countries as $row)
+                                @foreach($sub_categories as $row)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $row->name}}</td>
+                                        <td>{{ $row->category->name ?? ''}}</td>
 
                                         <td>
                                             @can('Role Edit')
                                                 <div class="btn-group">
-                                                    <a href="{{ route('country.edit', $row->id) }}" class="btn btn-xs btn-primary">
+                                                    <a href="{{ route('sub-category.edit', $row->id) }}" class="btn btn-xs btn-primary">
                                                         <i class="fa fa-pencil-square-o"></i>
                                                         Edit
                                                     </a>
