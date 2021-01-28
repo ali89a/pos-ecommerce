@@ -17,7 +17,7 @@
                 <div class="modcontent">
                     <div class="box-category">
                         <ul id="cat_accordion" class="list-group">
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Smartphone & Tablets</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Smartphone & Tablets</a> <span class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: block;">
                                     <li><a href="category.html">Men's Watches</a>
                                     </li>
@@ -29,7 +29,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a class="cutom-parent" href="category.html">Electronics</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a class="cutom-parent" href="category.html">Electronics</a> <span class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Cycling</a>
                                     </li>
@@ -45,7 +45,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Shoes</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Shoes</a> <span class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Sub Categories</a>
                                     </li>
@@ -59,7 +59,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Watches</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Watches</a> <span class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Men's Watches</a>
                                     </li>
@@ -71,7 +71,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Jewellery</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Jewellery</a> <span class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Sub Categories</a>
                                     </li>
@@ -85,15 +85,15 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Health &amp; Beauty</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Health &amp; Beauty</a> <span class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Kids &amp; Babies</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Kids &amp; Babies</a> <span class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Sports</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Sports</a> <span class="dcjq-icon"></span>
                             </li>
                             <li class=""><a href="category.html" class="cutom-parent">Home &amp; Garden</a><span class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Wines &amp; Spirits</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Wines &amp; Spirits</a> <span class="dcjq-icon"></span>
                             </li>
                         </ul>
                     </div>
@@ -101,8 +101,8 @@
             </div>
             <div class="module product-simple">
                 <h3 class="modtitle">
-                <span>Latest products</span>
-            </h3>
+                    <span>Latest products</span>
+                </h3>
                 <div class="modcontent">
                     <div class="extraslider">
                         <!-- Begin extraslider-inner -->
@@ -141,8 +141,8 @@
                                     </div>
                                     <div class="item-info">
                                         <div class="item-title"> <a href="#" target="_self" title="Xancetta bresao">
-                                                    Xancetta bresao 
-                                                </a>
+                                                Xancetta bresao
+                                            </a>
                                         </div>
                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -166,8 +166,8 @@
                                     </div>
                                     <div class="item-info">
                                         <div class="item-title"> <a href="#" target="_self" title="Sausage cowbee">
-                                                    Sausage cowbee 
-                                                </a>
+                                                Sausage cowbee
+                                            </a>
                                         </div>
                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -176,8 +176,8 @@
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                         </div>
                                         <div class="content_price price"> <span class="price product-price">
-                                                        $66.00 
-                                                    </span>
+                                                $66.00
+                                            </span>
                                         </div>
                                     </div>
                                     <!-- End item-info -->
@@ -194,8 +194,8 @@
                                     </div>
                                     <div class="item-info">
                                         <div class="item-title"> <a href="#" target="_self" title="Chicken swinesha">
-                                                    Chicken swinesha 
-                                                </a>
+                                                Chicken swinesha
+                                            </a>
                                         </div>
                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -293,26 +293,27 @@
                 <!-- //end Filters -->
                 <!--changed listings-->
                 <div class="products-list row nopadding-xs so-filter-gird">
+                    @forelse($offer_zone_products as $product)
                     <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                         <div class="product-item-container">
                             <div class="left-block">
                                 <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Chicken swinesha">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/1.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/2.jpg" class="img-2 img-responsive" alt="image">
+                                    <a href="{{route('single.product',$product->slug)}}" target="_self" title="Doenpuis consuat ">
+                                        <img src="{{asset('storage/'.$product->img_url)}}" class="img-1 img-responsive" alt="image">
+                                        <img src="{{asset('storage/'.$product->img_url)}}" class="img-2 img-responsive" alt="image">
                                     </a>
                                 </div>
-                                <div class="box-label"> <span class="label-product label-sale"> -16% </span>
+                                <div class="box-label"> <span class="label-product label-sale"> {{$product->discount}}% </span><span class="label-product label-new"> New </span>
                                 </div>
                                 <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
+                                    <a href="{{route('add.cart',$product->id)}}"><button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
+                                        <span>Add to cart </span>
+                                    </button></a>
                                     <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
                                     </button>
                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
                                     </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
+                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
                                     <!--end quickview-->
                                 </div>
                             </div>
@@ -324,713 +325,30 @@
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
                                     </div>
-                                    <h4><a href="product.html" title="Chicken swinesha" target="_self">Chicken swinesha</a></h4>
-                                    <div class="price"> <span class="price-new">$46.00</span>
-                                        <span class="price-old">$55.00</span>
+                                    <h4><a href="{{route('single.product',$product->slug)}}" title="Doenpuis consuat " target="_self">{{$product->name}}</a></h4>
+                                    <div class="price"> <span class="price-new">{{$product->selling_price}}</span>
+                                        <span class="price-old">{{$product->selling_price}}</span>
                                     </div>
                                     <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
+                                        <p>{{$product->description}}</p>
                                     </div>
                                     <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
+                                        <button class="addToCart btn-button" type="button" title="Add to Cart"><i class="fa fa-shopping-basket"></i>
                                         </button>
                                         <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
                                         </button>
                                         <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
                                         </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
+                                        <!--quickview-->
+                                        <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a>
                                         <!--end quickview-->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Cupim should ">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/3.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/4.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Cupim should " target="_self">Cupim should </a></h4>
-                                    <div class="price">$70.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Doenpuis consuat ">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/5.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/6.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="box-label"> <span class="label-product label-sale"> -13% </span><span class="label-product label-new"> New </span>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Doenpuis consuat " target="_self">Doenpuis consuat </a></h4>
-                                    <div class="price"> <span class="price-new">$66.00</span>
-                                        <span class="price-old">$76.00</span>
-                                    </div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Drutick lanaeger">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/7.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/8.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Drutick lanaeger" target="_self">Drutick lanaeger</a></h4>
-                                    <div class="price">$80.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Ercitation incididunt">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/9.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/10.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Ercitation incididunt" target="_self">Ercitation incididunt</a></h4>
-                                    <div class="price">$75.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Fatback picanha">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/11.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/12.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="box-label"> <span class="label-product label-new"> New </span>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Fatback picanha" target="_self">Fatback picanha</a></h4>
-                                    <div class="price">$84.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Jalapeno dolore">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/13.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/14.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Jalapeno dolore" target="_self">Jalapeno dolore</a></h4>
-                                    <div class="price">$98.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Mapicola incididuv">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/15.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/16.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="box-label"><span class="label-product label-new"> New </span>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Mapicola incididuv" target="_self">Mapicola incididuv</a></h4>
-                                    <div class="price">$96.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Ullamco occaeca">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/17.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/18.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Ullamco occaeca" target="_self">Ullamco occaeca</a></h4>
-                                    <div class="price">$67.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Pariatur porking">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/19.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/20.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Pariatur porking" target="_self">Pariatur porking</a></h4>
-                                    <div class="price">$79.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Doenpuis consuat ">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/6.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/5.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="box-label"> <span class="label-product label-sale"> -13% </span><span class="label-product label-new"> New </span>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Doenpuis consuat " target="_self">Doenpuis consuat </a></h4>
-                                    <div class="price"> <span class="price-new">$66.00</span>
-                                        <span class="price-old">$76.00</span>
-                                    </div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Drutick lanaeger">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/8.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/7.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Drutick lanaeger" target="_self">Drutick lanaeger</a></h4>
-                                    <div class="price">$80.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Ercitation incididunt">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/10.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/9.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Ercitation incididunt" target="_self">Ercitation incididunt</a></h4>
-                                    <div class="price">$75.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Fatback picanha">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/4.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/11.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="box-label"> <span class="label-product label-new"> New </span>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Fatback picanha" target="_self">Fatback picanha</a></h4>
-                                    <div class="price">$84.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
-                        <div class="product-item-container">
-                            <div class="left-block">
-                                <div class="product-image-container second_img">
-                                    <a href="product.html" target="_self" title="Jalapeno dolore">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/14.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/13.jpg" class="img-2 img-responsive" alt="image">
-                                    </a>
-                                </div>
-                                <div class="button-group so-quickview cartinfo--left">
-                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
-                                        <span>Add to cart </span> 
-                                    </button>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
-                                    </button>
-                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
-                                    </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a> 
-                                    <!--end quickview-->
-                                </div>
-                            </div>
-                            <div class="right-block">
-                                <div class="caption">
-                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                    </div>
-                                    <h4><a href="product.html" title="Jalapeno dolore" target="_self">Jalapeno dolore</a></h4>
-                                    <div class="price">$98.00</div>
-                                    <div class="description item-desc">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est .</p>
-                                    </div>
-                                    <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
-                                        </button>
-                                        <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a> 
-                                        <!--end quickview-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @empty
+                    @endforelse
                 </div>
                 <!--// End Changed listings-->
                 <!-- Filters -->
@@ -1049,12 +367,12 @@
 <!-- //Main Container -->
 @endsection
 @push('js')
-    <script type="text/javascript">
-        if($.cookie('display')){
-            view = $.cookie('display');
-        }else{
-            view = 'grid';
-        }
-        if(view) display(view);
-    </script>
+<script type="text/javascript">
+    if ($.cookie('display')) {
+        view = $.cookie('display');
+    } else {
+        view = 'grid';
+    }
+    if (view) display(view);
+</script>
 @endpush

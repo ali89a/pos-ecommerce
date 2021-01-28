@@ -6,7 +6,7 @@
 		<ul class="breadcrumb">
 			<li><a href="{{ route('front') }}"><i class="fa fa-home"></i></a></li>
 			<li><a href="#">Category Name</a></li>
-			<li><a href="#">Product Name</a></li>
+			<li><a href="#">{{$product->name}}</a></li>
 		</ul>
 		<div class="row">
 			<!--Left Part Start -->
@@ -241,13 +241,13 @@
 				
 						<div class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
 							<div class="large-image  ">
-								<img itemprop="image" class="product-image-zoom" src="{{ asset('front') }}/image/catalog/demo/product/funiture/1.jpg" data-zoom-image="{{ asset('front') }}/image/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<img itemprop="image" class="product-image-zoom" src="{{asset('storage/'.$product->img_url)}}" data-zoom-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha" alt="Chicken swinesha">
 							</div>
 							<a class="thumb-video pull-left" href="https://www.youtube.com/watch?v=HhabgvIIXik"><i class="fa fa-youtube-play"></i></a>
 							
 							<div id="thumb-slider" class="yt-content-slider full_slider owl-drag" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="10" data-items_column0="4" data-items_column1="3" data-items_column2="4"  data-items_column3="1" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
-								<a data-index="0" class="img thumbnail " data-image="{{ asset('front') }}/image/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha">
-									<img src="{{ asset('front') }}/image/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="0" class="img thumbnail " data-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha">
+									<img src="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
 								<a data-index="1" class="img thumbnail " data-image="{{ asset('front') }}/image/catalog/demo/product/funiture/2.jpg" title="Chicken swinesha">
 									<img src="{{ asset('front') }}/image/catalog/demo/product/funiture/2.jpg" title="Chicken swinesha" alt="Chicken swinesha">
@@ -255,11 +255,11 @@
 								<a data-index="2" class="img thumbnail " data-image="{{ asset('front') }}/image/catalog/demo/product/funiture/3.jpg" title="Chicken swinesha">
 									<img src="{{ asset('front') }}/image/catalog/demo/product/funiture/3.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
-								<a data-index="3" class="img thumbnail " data-image="{{ asset('front') }}/image/catalog/demo/product/funiture/4.jpg" title="Chicken swinesha">
-									<img src="{{ asset('front') }}/image/catalog/demo/product/funiture/4.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="3" class="img thumbnail " data-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha">
+									<img src="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
-								<a data-index="4" class="img thumbnail " data-image="{{ asset('front') }}/image/catalog/demo/product/funiture/5.jpg" title="Chicken swinesha">
-									<img src="{{ asset('front') }}/image/catalog/demo/product/funiture/5.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="4" class="img thumbnail " data-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha">
+									<img src="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
 							</div>
 							
@@ -267,7 +267,7 @@
 
 						<div class="content-product-right col-md-7 col-sm-12 col-xs-12">
 							<div class="title-product">
-								<h1>Chicken swinesha</h1>
+								<h1>{{$product->name}}</h1>
 							</div>
 							<!-- Review ---->
 							<div class="box-review form-group">
@@ -287,8 +287,8 @@
 
 							<div class="product-label form-group">
 								<div class="product_page_price price" itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
-									<span class="price-new" itemprop="price">$114.00</span>
-									<span class="price-old">$122.00</span>
+									<span class="price-new" itemprop="price">{{$product->selling_price}}</span>
+									<span class="price-old">{{$product->selling_price}}</span>
 								</div>
 								<div class="stock"><span>Availability:</span> <span class="status-stock">In Stock</span></div>
 							</div>
@@ -403,155 +403,8 @@
 						</ul>
 						<div class="tab-content col-lg-10 col-sm-9 col-xs-12">
 							<div id="tab-1" class="tab-pane fade active in">
-								<p>
-									The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there's no limit to what you can achieve. <br>
-									<br>
-									The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it's designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. <br>
-									<br>
-									Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple's ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. <br>
-									<br>
-									Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. <br>
-									<br>
-									The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.<br>
-									</p>
-								<h3>
-									Features:</h3>
-								<p>
-									Unrivaled display performance</p>
-								<ul>
-									<li>
-										30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.</li>
-									<li>
-										Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.</li>
-									<li>
-										Wide-format design for simultaneous display of two full pages of text and graphics.</li>
-									<li>
-										Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks</li>
-									<li>
-										Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.</li>
-									<li>
-										Lightning-fast pixel response for full-motion digital video playback.</li>
-									<li>
-										Support for 16.7 million saturated colors, for use in all graphics-intensive applications.</li>
-								</ul>
-								<p>
-									Simple setup and operation</p>
-								<ul>
-									<li>
-										Single cable with elegant breakout for connection to DVI, USB and FireWire ports</li>
-									<li>
-										Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.</li>
-									<li>
-										Two FireWire 400 ports to support iSight and other desktop peripherals</li>
-								</ul>
-								<p>
-									Sleek, elegant design</p>
-								<ul>
-									<li>
-										Huge virtual workspace, very small footprint.</li>
-									<li>
-										Narrow Bezel design to minimize visual impact of using dual displays</li>
-									<li>
-										Unique hinge design for effortless adjustment</li>
-									<li>
-										Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)</li>
-								</ul>
-								<h3>
-									Technical specifications</h3>
-								<p>
-									<b>Screen size (diagonal viewable image size)</b></p>
-								<ul>
-									<li>
-										Apple Cinema HD Display: 30 inches (29.7-inch viewable)</li>
-								</ul>
-								<p>
-									<b>Screen type</b></p>
-								<ul>
-									<li>
-										Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)</li>
-								</ul>
-								<p>
-									<b>Resolutions</b></p>
-								<ul>
-									<li>
-										2560 x 1600 pixels (optimum resolution)</li>
-									<li>
-										2048 x 1280</li>
-									<li>
-										1920 x 1200</li>
-									<li>
-										1280 x 800</li>
-									<li>
-										1024 x 640</li>
-								</ul>
-								<p>
-									<b>Display colors (maximum)</b></p>
-								<ul>
-									<li>
-										16.7 million</li>
-								</ul>
-								<p>
-									<b>Viewing angle (typical)</b></p>
-								<ul>
-									<li>
-										170° horizontal; 170° vertical</li>
-								</ul>
-								<p>
-									<b>Brightness (typical)</b></p>
-								<ul>
-									<li>
-										30-inch Cinema HD Display: 400 cd/m2</li>
-								</ul>
-								<p>
-									<b>Contrast ratio (typical)</b></p>
-								<ul>
-									<li>
-										700:1</li>
-								</ul>
-								<p>
-									<b>Response time (typical)</b></p>
-								<ul>
-									<li>
-										16 ms</li>
-								</ul>
-								<p>
-									<b>Pixel pitch</b></p>
-								<ul>
-									<li>
-										30-inch Cinema HD Display: 0.250 mm</li>
-								</ul>
-								<p>
-									<b>Screen treatment</b></p>
-								<ul>
-									<li>
-										Antiglare hardcoat</li>
-								</ul>
-								<p>
-									<b>User controls (hardware and software)</b></p>
-								<ul>
-									<li>
-										Display Power,</li>
-									<li>
-										System sleep, wake</li>
-									<li>
-										Brightness</li>
-									<li>
-										Monitor tilt</li>
-								</ul>
-								<p>
-									<b>Connectors and cables</b><br>
-									Cable</p>
-								<ul>
-									<li>
-										DVI (Digital Visual Interface)</li>
-									<li>
-										FireWire 400</li>
-									<li>
-										USB 2.0</li>
-									<li>
-										DC power (24 V)</li>
-								</ul>
-								
+							
+							{{$product->description ?? ''}}
 								
 							</div>
 							<div id="tab-review" class="tab-pane fade">

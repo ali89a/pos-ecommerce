@@ -42,7 +42,7 @@ Route::get('/contact', 'FrontController@contact')->name('contact');
 Route::get('/brand', 'FrontController@brand')->name('brand');
 Route::get('/faq', 'FrontController@faq')->name('faq');
 Route::get('/single-product/{slug}', 'FrontController@singleProduct')->name('single.product');
-Route::get('/shop-category', 'FrontController@category')->name('shop.category');
+Route::get('/shop-page', 'FrontController@shopPage')->name('shop.page');
 Route::get('/special-offer', 'FrontController@specialOffer')->name('special.offer');
 Route::get('/cart', 'FrontController@cart')->name('cart');
 Route::get('/user-register', 'FrontController@userRegister')->name('user.register');

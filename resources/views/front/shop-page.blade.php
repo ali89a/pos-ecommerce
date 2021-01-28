@@ -1,12 +1,11 @@
 @extends('layouts.front-app')
 
 @section('front-content')
-<!-- Main Container  -->
 <div class="main-container container">
     <ul class="breadcrumb">
         <li><a href="{{ route('front') }}"><i class="fa fa-home"></i></a>
         </li>
-        <li><a href="{{ route('new.arrival') }}">New Arrival Products</a>
+        <li><a href="{{ route('shop.page') }}">Shop Page</a>
         </li>
     </ul>
     <div class="row">
@@ -17,7 +16,8 @@
                 <div class="modcontent">
                     <div class="box-category">
                         <ul id="cat_accordion" class="list-group">
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Smartphone & Tablets</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Smartphone & Tablets</a>
+                                <span class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: block;">
                                     <li><a href="category.html">Men's Watches</a>
                                     </li>
@@ -29,7 +29,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a class="cutom-parent" href="category.html">Electronics</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a class="cutom-parent" href="category.html">Electronics</a> <span
+                                    class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Cycling</a>
                                     </li>
@@ -45,7 +46,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Shoes</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Shoes</a> <span
+                                    class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Sub Categories</a>
                                     </li>
@@ -59,7 +61,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Watches</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Watches</a> <span
+                                    class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Men's Watches</a>
                                     </li>
@@ -71,7 +74,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hadchild"><a href="category.html" class="cutom-parent">Jewellery</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <li class="hadchild"><a href="category.html" class="cutom-parent">Jewellery</a> <span
+                                    class="button-view  fa fa-plus-square-o"></span>
                                 <ul style="display: none;">
                                     <li><a href="category.html">Sub Categories</a>
                                     </li>
@@ -85,15 +89,20 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Health &amp; Beauty</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Health &amp; Beauty</a> <span
+                                    class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Kids &amp; Babies</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Kids &amp; Babies</a> <span
+                                    class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Sports</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Sports</a> <span
+                                    class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Home &amp; Garden</a><span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Home &amp; Garden</a><span
+                                    class="dcjq-icon"></span>
                             </li>
-                            <li class=""><a href="category.html" class="cutom-parent">Wines &amp; Spirits</a>  <span class="dcjq-icon"></span>
+                            <li class=""><a href="category.html" class="cutom-parent">Wines &amp; Spirits</a> <span
+                                    class="dcjq-icon"></span>
                             </li>
                         </ul>
                     </div>
@@ -101,8 +110,8 @@
             </div>
             <div class="module product-simple">
                 <h3 class="modtitle">
-                <span>Latest products</span>
-            </h3>
+                    <span>Latest products</span>
+                </h3>
                 <div class="modcontent">
                     <div class="extraslider">
                         <!-- Begin extraslider-inner -->
@@ -112,20 +121,23 @@
                                     <div class="item-image">
                                         <div class="item-img-info">
                                             <a href="#" target="_self" title="Mandouille short ">
-                                                <img src="{{ asset('front') }}/image/product/1.jpg" alt="Mandouille short">
+                                                <img src="{{ asset('front') }}/image/catalog/demo/product/80/8.jpg" alt="Mandouille short">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="item-info">
-                                        <div class="item-title"> <a href="#" target="_self" title="Mandouille short">Mandouille short </a>
+                                        <div class="item-title"> <a href="#" target="_self"
+                                                title="Mandouille short">Mandouille short </a>
                                         </div>
-                                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <div class="rating"> <span class="fa fa-stack"><i
+                                                    class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                         </div>
-                                        <div class="content_price price"> <span class="price-new product-price">$55.00 </span>&nbsp;&nbsp; <span class="price-old">$76.00 </span>&nbsp;</div>
+                                        <div class="content_price price"> <span class="price-new product-price">$55.00
+                                            </span>&nbsp;&nbsp; <span class="price-old">$76.00 </span>&nbsp;</div>
                                     </div>
                                     <!-- End item-info -->
                                     <!-- End item-wrap-inner -->
@@ -135,22 +147,24 @@
                                     <div class="item-image">
                                         <div class="item-img-info">
                                             <a href="#" target="_self" title="Xancetta bresao ">
-                                                <img src="{{ asset('front') }}/image/product/2.jpg" alt="Xancetta bresao">
+                                                <img src="{{ asset('front') }}/image/catalog/demo/product/80/7.jpg" alt="Xancetta bresao">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="item-info">
                                         <div class="item-title"> <a href="#" target="_self" title="Xancetta bresao">
-                                                    Xancetta bresao 
-                                                </a>
+                                                Xancetta bresao
+                                            </a>
                                         </div>
-                                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <div class="rating"> <span class="fa fa-stack"><i
+                                                    class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                         </div>
-                                        <div class="content_price price"> <span class="price-new product-price">$80.00 </span>&nbsp;&nbsp; <span class="price-old">$89.00 </span>&nbsp;</div>
+                                        <div class="content_price price"> <span class="price-new product-price">$80.00
+                                            </span>&nbsp;&nbsp; <span class="price-old">$89.00 </span>&nbsp;</div>
                                     </div>
                                     <!-- End item-info -->
                                     <!-- End item-wrap-inner -->
@@ -160,24 +174,25 @@
                                     <div class="item-image">
                                         <div class="item-img-info">
                                             <a href="#" target="_self" title="Sausage cowbee ">
-                                                <img src="{{ asset('front') }}/image/product/3.jpg" alt="Sausage cowbee">
+                                                <img src="{{ asset('front') }}/image/catalog/demo/product/80/6.jpg" alt="Sausage cowbee">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="item-info">
                                         <div class="item-title"> <a href="#" target="_self" title="Sausage cowbee">
-                                                    Sausage cowbee 
-                                                </a>
+                                                Sausage cowbee
+                                            </a>
                                         </div>
-                                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <div class="rating"> <span class="fa fa-stack"><i
+                                                    class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                         </div>
                                         <div class="content_price price"> <span class="price product-price">
-                                                        $66.00 
-                                                    </span>
+                                                $66.00
+                                            </span>
                                         </div>
                                     </div>
                                     <!-- End item-info -->
@@ -188,22 +203,24 @@
                                     <div class="item-image">
                                         <div class="item-img-info">
                                             <a href="#" target="_self" title="Chicken swinesha ">
-                                                <img src="{{ asset('front') }}/image/product/4.jpg" alt="Chicken swinesha">
+                                                <img src="{{ asset('front') }}/image/catalog/demo/product/80/5.jpg" alt="Chicken swinesha">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="item-info">
                                         <div class="item-title"> <a href="#" target="_self" title="Chicken swinesha">
-                                                    Chicken swinesha 
-                                                </a>
+                                                Chicken swinesha
+                                            </a>
                                         </div>
-                                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <div class="rating"> <span class="fa fa-stack"><i
+                                                    class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                         </div>
-                                        <div class="content_price price"> <span class="price-new product-price">$45.00 </span>&nbsp;&nbsp; <span class="price-old">$56.00 </span>&nbsp;</div>
+                                        <div class="content_price price"> <span class="price-new product-price">$45.00
+                                            </span>&nbsp;&nbsp; <span class="price-old">$56.00 </span>&nbsp;</div>
                                     </div>
                                     <!-- End item-info -->
                                     <!-- End item-wrap-inner -->
@@ -223,13 +240,13 @@
                         </a>
                     </div>
                 </div>
-            </div> 
+            </div>
         </aside>
         <!--Left Part End -->
         <!--Middle Part Start-->
         <div id="content" class="col-md-9 col-sm-8">
             <div class="products-category">
-                <h3 class="title-category ">New Arrival Products</h3>
+                <h3 class="title-category ">Shop Page</h3>
                 <div class="category-derc">
                     <div class="row">
                         <div class="col-sm-12">
@@ -249,9 +266,11 @@
                     <div class="row">
                         <div class="col-md-5 col-sm-3 col-xs-12 view-mode">
                             <div class="list-view">
-                                <button class="btn btn-default grid active" data-view="grid" data-toggle="tooltip" data-original-title="Grid"><i class="fa fa-th"></i>
+                                <button class="btn btn-default grid active" data-view="grid" data-toggle="tooltip"
+                                    data-original-title="Grid"><i class="fa fa-th"></i>
                                 </button>
-                                <button class="btn btn-default list" data-view="list" data-toggle="tooltip" data-original-title="List"><i class="fa fa-th-list"></i>
+                                <button class="btn btn-default list" data-view="list" data-toggle="tooltip"
+                                    data-original-title="List"><i class="fa fa-th-list"></i>
                                 </button>
                             </div>
                         </div>
@@ -282,32 +301,33 @@
                             </div>
                         </div>
                         <!-- <div class="box-pagination col-md-3 col-sm-4 col-xs-12 text-right">
-                        <ul class="pagination">
-                            <li class="active"><span>1</span></li>
-                            <li><a href="">2</a></li><li><a href="">&gt;</a></li>
-                            <li><a href="">&gt;|</a></li>
-                        </ul>
-                    </div> --></div>
+                                <ul class="pagination">
+                                    <li class="active"><span>1</span></li>
+                                    <li><a href="">2</a></li><li><a href="">&gt;</a></li>
+                                    <li><a href="">&gt;|</a></li>
+                                </ul>
+                            </div> -->
+                    </div>
                 </div>
                 <!-- //end Filters -->
                 <!--changed listings-->
                 <div class="products-list row nopadding-xs so-filter-gird">
-                    @forelse($new_products as $product)
+                    @forelse($all_products as $product)
                     <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                         <div class="product-item-container">
                             <div class="left-block">
                                 <div class="product-image-container second_img">
-                                    <a href="{{route('single.product',$product->slug)}}" target="_self" title="Doenpuis consuat ">
-                                        <img src="{{asset('storage/'.$product->img_url)}}" class="img-1 img-responsive" alt="image">
-                                        <img src="{{asset('storage/'.$product->img_url)}}" class="img-2 img-responsive" alt="image">
+                                    <a href="product.html" target="_self" title="Doenpuis consuat ">
+                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/5.jpg" class="img-1 img-responsive" alt="image">
+                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/6.jpg" class="img-2 img-responsive" alt="image">
                                     </a>
                                 </div>
-                                <div class="box-label"> <span class="label-product label-sale"> {{$product->discount}}% </span><span class="label-product label-new"> New </span>
+                                <div class="box-label"> <span class="label-product label-sale"> -13% </span><span class="label-product label-new"> New </span>
                                 </div>
                                 <div class="button-group so-quickview cartinfo--left">
-                                    <a href="{{route('add.cart',$product->id)}}"><button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
+                                    <button type="button" class="addToCart btn-button" title="Add to cart" onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
                                         <span>Add to cart </span>
-                                    </button></a>
+                                    </button>
                                     <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish List</span>
                                     </button>
                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
@@ -324,22 +344,21 @@
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
                                     </div>
-                                    <h4><a href="{{route('single.product',$product->slug)}}" title="Doenpuis consuat " target="_self">{{$product->name}}</a></h4>
-                                    <div class="price"> <span class="price-new">{{$product->selling_price}}</span>
-                                        <span class="price-old">{{$product->selling_price}}</span>
+                                    <h4><a href="product.html" title="Doenpuis consuat " target="_self">{{$product->name}}</a></h4>
+                                    <div class="price"> <span class="price-new">$66.00</span>
+                                        <span class="price-old">$76.00</span>
                                     </div>
                                     <div class="description item-desc">
                                         <p>{{$product->description}}</p>
                                     </div>
                                     <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart"><i class="fa fa-shopping-basket"></i>
+                                        <button class="addToCart btn-button" type="button" title="Add to Cart" onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
                                         </button>
                                         <button class="wishlist btn-button" type="button" title="Add to Wish List" onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
                                         </button>
                                         <button class="compare btn-button" type="button" title="Compare this Product" onclick="compare.add('101');"><i class="fa fa-refresh"></i>
                                         </button>
-                                        <!--quickview-->
-                                        <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a>
+                                        <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i></a>
                                         <!--end quickview-->
                                     </div>
                                 </div>

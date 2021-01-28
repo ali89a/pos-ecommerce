@@ -795,7 +795,7 @@
                                                             <a href="{{ route('front') }}">Home</a>
                                                         </li>
                                                         <li class="">
-                                                            <a href="{{ route('shop.category') }}">Shop Page</a>
+                                                            <a href="{{ route('shop.page') }}">Shop Page</a>
                                                         </li>
                                                         <li class="">
                                                             <p class="close-menu"></p>

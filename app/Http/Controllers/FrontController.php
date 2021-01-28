@@ -16,23 +16,28 @@ class FrontController extends Controller
     }
     public function bestSeller()
     {
-        return view('front.best-seller');
+        $best_seller_products = Product::where('status', 'active')->where('best_seller', 'active')->get();
+        return view('front.best-seller',compact('best_seller_products'));
     }
-    public function singleProduct()
+    public function singleProduct($slug)
     {
-        return view('front.single-product');
+        $product = Product::where('slug', $slug)->first();
+        return view('front.single-product',compact('product'));
     }
     public function featureProduct()
     {
-        return view('front.feature-product');
+        $feature_products = Product::where('status', 'active')->where('feature', 'active')->get();
+        return view('front.feature-product',compact('feature_products'));
     }
     public function newArrival()
     {
-        return view('front.new-arrival');
+        $new_products = Product::where('status', 'active')->where('best_seller', 'active')->get();
+        return view('front.new-arrival',compact('new_products'));
     }
     public function offerZone()
     {
-        return view('front.offer-zone');
+        $offer_zone_products = Product::where('status', 'active')->where('discount', '>', 0)->get();
+        return view('front.offer-zone',compact('offer_zone_products'));
     }
     public function about()
     {
@@ -42,9 +47,10 @@ class FrontController extends Controller
     {
         return view('front.contact');
     }
-    public function category()
+    public function shopPage()
     {
-        return view('front.category');
+        $all_products = Product::where('status', 'active')->get();
+        return view('front.shop-page',compact('all_products'));
     }
     public function brand()
     {

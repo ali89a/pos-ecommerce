@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="buttons clearfix">
-                <div class="pull-left"><a href="{{ route('shop.category') }}" class="btn btn-default">Continue Shopping</a></div>
+                <div class="pull-left"><a href="{{ route('shop.page') }}" class="btn btn-default">Continue Shopping</a></div>
                 <div class="pull-right"><a href="{{ route('checkout') }}" class="btn btn-primary">Checkout</a></div>
             </div>
         </div>
