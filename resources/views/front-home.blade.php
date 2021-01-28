@@ -293,10 +293,10 @@
                                                             <span class="price-old">$76.00</span>
                                                         </p>
                                                         <div class="button-group">
-                                                            <button class="addToCart" title="Add to Cart" type="button" onclick="cart.add('69');"><i class="fa fa-shopping-cart"></i>
+                                                            <a href="{{route('add.cart',$product->id)}}"><button class="addToCart" title="Add to Cart" type="button" onclick="cart.add('69');"><i class="fa fa-shopping-cart"></i>
                                                                 <span>Add to
                                                                     Cart</span>
-                                                            </button>
+                                                            </button></a>
                                                             <button class="btn-button wishlist" type="button" title="Add to Wish List" onclick="wishlist.add('69');"><i class="fa fa-heart"></i><span>Add to Wish
                                                                     List</span>
                                                             </button>
@@ -390,7 +390,7 @@
                 <div class="modcontent">
                     <div class="so-extraslider">
                         <div class="yt-content-slider extraslider-inner products-list" data-rtl="yes" data-pagination="no" data-autoplay="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column0="6" data-items_column1="3" data-items_column2="2" data-items_column3="2" data-items_column4="1" data-arrows="yes" data-lazyload="yes" data-loop="no" data-buttonpage="top">
-                            @foreach($feature_products as $item)
+                            @foreach($offer_zone_products as $item)
                             <div class="item ">
                                 <div class="product-layout product-grid2 style1">
                                     <div class="product-thumb transition product-item-container">

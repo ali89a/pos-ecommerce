@@ -25,6 +25,13 @@ Route::get('/clear-cache', function () {
    
 // });
 Route::get('/', 'FrontController@index')->name('front');
+
+Route::get('/add-to-cart/{slug}', 'CartController@addCart')->name('add.cart');
+Route::get('/shopping-cart', 'CartController@shoppingCart')->name('shopping.cart');
+Route::get('/clear-cart', 'CartController@clearCart')->name('clear.cart');
+Route::post('/update-cart', 'CartController@updateCart')->name('update.cart');
+Route::get('/remove-product/{slug}', 'CartController@removeProduct')->name('remove.product');
+
 Route::get('/about', 'FrontController@about')->name('about');
 Route::get('/best-sellers', 'FrontController@bestSeller')->name('best.seller');
 Route::get('/feature-products', 'FrontController@featureProduct')->name('feature.product');
