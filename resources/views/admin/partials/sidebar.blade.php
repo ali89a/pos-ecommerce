@@ -49,6 +49,13 @@
                     <p>Label</p>
                 </a>
             </li>
+            <li class="nav-header">POS</li>
+            <li class="nav-item">
+                <a href="{{route('pos.index')}}" class="nav-link {{ (Request::segment(1) == 'pos' )?' active-color':''}}">
+                    <i class="nav-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                    <p>POS</p>
+                </a>
+            </li>
             <li class="nav-header">Purchase & Sales info</li>
             <li class="nav-item">
                 <a href="{{route('purchase.index')}}" class="nav-link {{ (Request::segment(1) == 'purchase' )?' active-color':''}}">
