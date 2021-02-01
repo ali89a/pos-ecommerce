@@ -56,6 +56,7 @@ Route::get('lang/{locale}', 'HomeController@lang');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('auth')->group(function () {
 
+    Route::resource('pos', 'PosController');
     Route::resource('product', 'ProductController');
     Route::get('fetch-product-by-category-id/{id}', 'ProductController@fetch_products_by_cat_id')->name('fetch-product-info');
     Route::get('fetch-product-info/{id}', 'ProductController@fetch_product')->name('fetch-product-info');
