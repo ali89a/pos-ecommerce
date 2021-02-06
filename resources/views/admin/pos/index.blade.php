@@ -4,7 +4,8 @@ POS
 @endsection
 
 @section('style')
-
+<!-- Select2 -->
+<link rel="stylesheet" href="https://adminlte.io/themes/AdminLTE/bower_components/select2/dist/css/select2.min.css">
 @endsection
 
 @section('css-bottom')
@@ -33,7 +34,7 @@ POS
               <form>
                 <div class="form-group">
                   <div class="input-group">
-                    <select class="custom-select" id="inputGroupSelect04">
+                    <select class="custom-select select2" id="inputGroupSelect04">
                       <option selected disabled>Select Customer</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
@@ -45,7 +46,13 @@ POS
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Enter Product Name">
+                  <!-- <input type="text" class="form-control" placeholder="Enter Product Name"> -->
+                    <select class="custom-select select2">
+                      <option selected disabled>Enter Product Name</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
                 </div>
                 <!-- <div class="form-group">
                   <input type="text" class="form-control" placeholder="Another input">
@@ -188,5 +195,12 @@ POS
 @endsection
 
 @push('script-bottom')
-
+<!-- Select2 -->
+<script src="https://adminlte.io/themes/AdminLTE/bower_components/select2/dist/js/select2.full.min.js"></script>
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+})
+</script>
 @endpush
