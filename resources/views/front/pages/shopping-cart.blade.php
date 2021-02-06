@@ -75,7 +75,7 @@
                                 <td class="text-right"><strong>Sub-Total:</strong></td>
                                 <td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td class="text-right"><strong>Flat Shipping Rate:</strong></td>
                                 <td class="text-right">$5.00</td>
                             </tr>
@@ -86,7 +86,7 @@
                             <tr>
                                 <td class="text-right"><strong>VAT (20%):</strong></td>
                                 <td class="text-right">$41.80</td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <td class="text-right"><strong>Total:</strong></td>
                                 <td class="text-right">$256.80</td>
