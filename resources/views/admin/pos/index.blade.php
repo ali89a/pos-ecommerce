@@ -130,6 +130,27 @@
 			</div>
 			<div class="col-lg-7 col-md-6 col-xs-12">
                 <div class="card">
+                    <div class="card-header">
+                        <div class="input-group">
+                            <!-- <input type="text" class="form-control"> -->
+                            <select class="custom-select select2">
+                                <option selected disabled>Select Categories</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="custom-select select2">
+                                <option selected disabled>Sub Category</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="input-group-prepend">
+                                <!-- <span class="input-group-text" id="">Filter</span> -->
+                                <button class="btn btn-success">Filter</button>
+                            </div>
+                        </div>
+                    </div>
 					<div class="card-body">
                         <div class="row">
                             <div class="col-3">
