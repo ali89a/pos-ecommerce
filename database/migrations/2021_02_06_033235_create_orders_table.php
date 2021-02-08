@@ -20,12 +20,13 @@ class CreateOrdersTable extends Migration
             $table->string('address', 20);
             $table->string('city', 20);
             $table->string('email', 20);
-            $table->string('postcode', 20);
-            $table->string('coupon', 20);
-            $table->string('invoice_number', 20);
-            $table->double('subtotal', 15, 2);
+            $table->string('postcode', 20)->nullable();
+            $table->string('Cash_On_Delivery', 20)->nullable();
+            $table->string('coupon', 20)->nullable();
+            $table->string('invoice_number', 20)->nullable();
+            $table->double('subtotal', 15, 2)->nullable();
             $table->double('discount', 8, 2)->nullable();
-            $table->double('grandtotal', 15, 2);
+            $table->double('grandtotal', 15, 2)->nullable();
             $table->double('vat', 8, 2)->nullable();
             $table->date('date')->nullable();
             $table->text('comments')->nullable();

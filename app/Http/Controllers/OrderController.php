@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use Illuminate\Http\Request;
+use Brian2694\Toastr\Facades\Toastr;
 
 class OrderController extends Controller
 {
@@ -35,7 +36,12 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+      //  dd($request->all());
+        $order=new Order();
+        $order->fill($request->all());
+        $order->save();
+        Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
+        return redirect()->back();
     }
 
     /**
