@@ -33,11 +33,19 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        View::composer('front-home', function ($view) {
+        View::composer('*', function ($view) {
             //  $category = ProductCategory::where('publicationStatus', 1)->get();
             $category = ProductCategory::all();
             $view->with('category', $category);
         });
+
+
+
+        // View::composer('front-app', function ($view) {
+        //     //  $category = ProductCategory::where('publicationStatus', 1)->get();
+        //     $category = ProductCategory::all();
+        //     $view->with('category', $category);
+        // });
 
 
 
@@ -51,5 +59,7 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('*', function ($view) {
             $view->with('menu_categories', ProductCategory::latest()->limit(10)->get());
         });
+
+
     }
 }
