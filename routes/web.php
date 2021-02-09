@@ -49,13 +49,14 @@ Route::get('/user-register', 'FrontController@userRegister')->name('user.registe
 Route::get('/user-login', 'FrontController@userLogin')->name('user.login');
 Route::get('/cart', 'FrontController@cart')->name('cart');
 Route::get('/checkout', 'FrontController@checkout')->name('checkout');
-
+ Route::resource('orders', 'OrderController');
 Auth::routes();
 Route::get('lang/{locale}', 'HomeController@lang');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('auth')->group(function () {
 
+   
     Route::resource('pos', 'PosController');
     Route::resource('product', 'ProductController');
     Route::get('fetch-product-by-category-id/{id}', 'ProductController@fetch_products_by_cat_id')->name('fetch-product-info');
