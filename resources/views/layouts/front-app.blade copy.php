@@ -109,19 +109,20 @@
                                                     <option value="0">All Categories</option>
 
 
-
-
-
-                                                    @foreach($category as $catName )
-
-                                                    <option value="78">{{$catName->name}}</option>
                                                     
-                                                    @endforeach
-                                                    
-                                                   
-
-
-
+                                                    <option value="78">Apparel</option>
+                                                    <option value="77">Cables &amp; Connectors</option>
+                                                    <option value="82">Cameras &amp; Photo</option>
+                                                    <option value="80">Flashlights &amp; Lamps</option>
+                                                    <option value="81">Mobile Accessories</option>
+                                                    <option value="79">Video Games</option>
+                                                    <option value="20">Jewelry &amp; Watches</option>
+                                                    <option value="76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earings
+                                                    </option>
+                                                    <option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wedding Rings
+                                                    </option>
+                                                    <option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men Watches
+                                                    </option>
                                                 </select>
                                             </div>
                                             <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Keyword here..." name="search">
@@ -254,29 +255,11 @@
                                                         <ul class="megamenu">
                                                             <li class="item-vertical  with-sub-menu hover">
                                                                 <p class="close-menu"></p>
-                                                               
-                                                               
-                                                                @foreach($category as $catName )
-
-                                                            
-                                                               
                                                                 <a href="#" class="clearfix">
                                                                     <img src="{{ asset('front') }}/image/catalog/menu/icons/ico10.png" alt="icon">
-                                                                   
-                                                                    <span>{{$catName->name}}</span>
-
-
+                                                                    <span>Gifts & Toys</span>
                                                                     <b class="caret"></b>
                                                                 </a>
-
-
-
-
-                                                                @endforeach
-
-
-
-
                                                                 <div class="sub-menu" data-subwidth="60">
                                                                     <div class="content">
                                                                         <div class="row">
@@ -414,18 +397,6 @@
                                                                     </div>
                                                                 </div>
                                                             </li>
-
-
-
-
-
-
-
-
-
-
-
-
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
