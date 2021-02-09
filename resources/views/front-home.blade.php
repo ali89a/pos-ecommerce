@@ -91,7 +91,7 @@
                                                             <span class="label label-sale">-13%</span>
                                                         </div>
                                                         <a href="#" target="_self" title="product">
-                                                            <img src="{{ asset('front') }}/image/product/1.jpg" alt="Ground round enim" class="img-responsive">
+                                                            <img src="{{asset('storage/'.$publishedProduct->img_url)}}" alt="{{$publishedProduct->name}}" class="img-responsive">
                                                         </a>
                                                     </div>
                                                     <!--quickview-->
@@ -119,9 +119,9 @@
                                                         <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                         <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     </div>
-                                                    <p class="desc">{{$publishedProduct->name}}</p>
-                                                    <p class="price"> <span class="price-new">$66.00</span>
-                                                        <span class="price-old">$76.00</span>
+                                                    <p class="desc">{{$publishedProduct->description}}</p>
+                                                    <p class="price"> <span class="price-new">{{$publishedProduct->selling_price}}</span>
+                                                        <span class="price-old">{{$publishedProduct->selling_price}}</span>
                                                     </p>
                                                     <div class="button-group">
                                                         <button class="addToCart" title="Add to Cart" type="button" onclick="cart.add('69');"><i class="fa fa-shopping-cart"></i> <span>Add to

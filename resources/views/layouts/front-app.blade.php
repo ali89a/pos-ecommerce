@@ -197,7 +197,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td class="text-left"><strong>Sub-Total</strong>
-                    
+
                                                             </td>
                                                             <td class="text-right">${{$total}}</td>
                                                         </tr>
@@ -223,6 +223,7 @@
                     <div class="row">
                         <div class="bottom1 menu-vertical col-lg-2 col-md-3">
                             <!-- Secondary menu -->
+<<<<<<< HEAD
                             <div class="responsive so-megamenu  megamenu-style-dev">
                                 <div class="so-vertical-menu ">
                                     <nav class="navbar-default">
@@ -804,6 +805,9 @@
                                     </nav>
                                 </div>
                             </div>
+=======
+                            @include('front.partials.category')
+>>>>>>> 8603ede0c038b135e03519ba6e8ee657fc05f71e
                             <!-- // end Secondary menu -->
                         </div>
                         <!-- Main menu -->
