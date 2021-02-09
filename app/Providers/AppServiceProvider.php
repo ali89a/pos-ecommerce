@@ -4,6 +4,15 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use View;
+use App\Model\ProductCategory;
+use DB;
+
+
+use App\Model\Product;
+
+
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -24,5 +33,24 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        View::composer('front-home', function($view) {
+          //  $category = ProductCategory::where('publicationStatus', 1)->get();
+          $category = ProductCategory::all();
+            $view->with('category', $category);
+        });
+
+
+
+        View::composer('front-home', function($view) {
+            //  $category = ProductCategory::where('publicationStatus', 1)->get();
+            $product = Product::all();
+         //  $product = Product::where('status', active)->get();
+              $view->with('product', $product);
+          });
+
+
+
+
+
     }
 }
