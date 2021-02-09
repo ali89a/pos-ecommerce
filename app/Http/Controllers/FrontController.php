@@ -24,6 +24,11 @@ class FrontController extends Controller
         $product = Product::where('slug', $slug)->first();
         return view('front.single-product',compact('product'));
     }
+    public function quickProduct($slug)
+    {
+        $product = Product::where('slug', $slug)->first();
+        return view('quickview',compact('product'));
+    }
     public function featureProduct()
     {
         $feature_products = Product::where('status', 'active')->where('feature', 'active')->get();
