@@ -54,10 +54,18 @@ Product
                 {!! BootForm::select('unit_of_measurement_id', 'Unit',$units, null,
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
               </div>
+
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 {!! BootForm::text('name', 'Product Name', null,
                 ['placeholder'=>'Enter name','required'=>'required'] ) !!}
               </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                {!! BootForm::text('description', 'Product Description', null,
+                ['placeholder'=>'Enter description','required'=>'required'] ) !!}
+              </div>
+
+
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 {!! BootForm::text('selling_price', 'Selling Price', null,
                 ['placeholder'=>'Enter Selling Price','required'=>'required'] ) !!}

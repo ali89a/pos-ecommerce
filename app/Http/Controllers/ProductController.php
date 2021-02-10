@@ -87,6 +87,9 @@ class ProductController extends Controller
         $pro->feature = $request->feature;
         $pro->name = $request->name;
         $pro->slug = Str::slug($request->name, '-');
+
+        $pro->description = $request->description;
+
         $pro->alert_quantity = $request->alert_quantity;
         $pro->selling_price = $request->selling_price;
         $pro->code = \App\Classes\ProductCode::serial_number();
@@ -151,6 +154,11 @@ class ProductController extends Controller
         $product->best_seller = $request->best_seller;
         $product->feature = $request->feature;
         $product->name = $request->name;
+
+
+        $product->description = $request->description;
+
+
         $product->alert_quantity = $request->alert_quantity;
         $product->selling_price = $request->selling_price;
         $product->updator_user_id = \Auth::id();
