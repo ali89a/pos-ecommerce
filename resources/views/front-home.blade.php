@@ -96,7 +96,7 @@
                                                     </div>
                                                     <!--quickview-->
                                                     <div class="so-quickview">
-                                                        <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
+                                                        <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="{{route('quick.product',$publishedProduct->slug)}}" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
                                                                 view</span></a>
                                                     </div>
                                                     <!--end quickview-->
@@ -189,7 +189,7 @@
                                                         </div>
                                                         <!--quickview-->
                                                         <div class="so-quickview">
-                                                            <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="{{route('single.product',$product->slug)}}" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
+                                                            <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="{{route('quick.product',$product->slug)}}" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
                                                                     view</span></a>
                                                         </div>
                                                         <!--end quickview-->
@@ -325,7 +325,7 @@
                                                 </div>
                                                 <!--quickview-->
                                                 <div class="so-quickview">
-                                                    <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
+                                                    <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="{{route('quick.product',$publishedProduct->slug)}}" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
                                                             view</span></a>
                                                 </div>
                                                 <!--end quickview-->
@@ -393,7 +393,7 @@
                                                 </div>
                                                 <!--quickview-->
                                                 <div class="so-quickview">
-                                                    <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
+                                                    <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="{{route('quick.product',$publishedProduct->slug)}}" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick
                                                             view</span></a>
                                                 </div>
                                                 <!--end quickview-->
