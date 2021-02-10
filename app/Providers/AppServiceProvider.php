@@ -59,7 +59,8 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('*', function ($view) {
             $view->with('menu_categories', ProductCategory::latest()->limit(10)->get());
         });
-
-
+        view()->composer('*', function ($view) {
+            $view->with('letest_products', Product::latest()->limit(5)->get());
+        });
     }
 }
