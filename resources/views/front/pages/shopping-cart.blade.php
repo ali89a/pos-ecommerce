@@ -89,7 +89,8 @@
                             </tr> -->
                             <tr>
                                 <td class="text-right"><strong>Total:</strong></td>
-                                <td class="text-right">$256.80</td>
+                                {{-- <td class="text-right">$256.80</td> --}}
+                                <td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
                             </tr>
                         </tbody>
                     </table>

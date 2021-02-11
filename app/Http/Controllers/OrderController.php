@@ -41,8 +41,27 @@ class OrderController extends Controller
         $order->fill($request->all());
         $order->save();
         Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
-        return redirect()->back();
+      //  return redirect()->back();
+
+
+      //return redirect('/checkout/my-home');
+      return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
+
+
+
     }
+
+    public function customerHome()
+    {
+       
+       return view('front.customer.customerHome');
+       
+    }
+
+
+
+
+
 
     /**
      * Display the specified resource.

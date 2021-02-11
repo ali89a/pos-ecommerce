@@ -50,7 +50,14 @@ Route::get('/user-register', 'FrontController@userRegister')->name('user.registe
 Route::get('/user-login', 'FrontController@userLogin')->name('user.login');
 Route::get('/cart', 'FrontController@cart')->name('cart');
 Route::get('/checkout', 'FrontController@checkout')->name('checkout');
+
  Route::resource('orders', 'OrderController');
+
+
+ Route::get('/checkout/my-home', 'OrderController@customerHome');
+ //Route::get('/customerHome', 'FrontController@customer');
+
+
 Auth::routes();
 Route::get('lang/{locale}', 'HomeController@lang');
 
