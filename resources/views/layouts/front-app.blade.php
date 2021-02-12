@@ -31,6 +31,8 @@
     <link href="{{ asset('front') }}/css/header/header.css" rel="stylesheet">
     <link id="color_scheme" href="{{ asset('front') }}/css/home.css" rel="stylesheet">
     <link href="{{ asset('front') }}/css/responsive.css" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('toastr/toastr.min.css')}}">
     <!-- Google web fonts====== -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
@@ -115,10 +117,10 @@
                                                     @foreach($category as $catName )
 
                                                     <option value="78">{{$catName->name}}</option>
-                                                    
+
                                                     @endforeach
-                                                    
-                                                   
+
+
 
 
 
@@ -476,7 +478,11 @@
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/homepage.js"></script>
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/toppanel.js"></script>
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/so_megamenu.js"></script>
-    <script type="text/javascript" src="{{ asset('front') }}/js/themejs/addtocart.js"></script>
+    <!-- <script type="text/javascript" src="{{ asset('front') }}/js/themejs/addtocart.js"></script> -->
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    {!! Toastr::message() !!}
+  
+    
     @stack('js')
 </body>
 
