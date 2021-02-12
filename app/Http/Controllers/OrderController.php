@@ -6,6 +6,10 @@ use App\Order;
 use Illuminate\Http\Request;
 use Brian2694\Toastr\Facades\Toastr;
 
+
+use Gloudemans\Shoppingcart\Facades\Cart;
+use Session;
+
 class OrderController extends Controller
 {
     /**
@@ -34,28 +38,54 @@ class OrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    // public function store(Request $request)
+    // {
+    //   //  dd($request->all());
+    //     $order=new Order();
+    //     $order->fill($request->all());
+    //     $order->save();
+    //     Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
+    //   //  return redirect()->back();
+    //   //return redirect('/checkout/my-home');
+    //   return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
+    // }
+
+
     public function store(Request $request)
     {
-      //  dd($request->all());
-        $order=new Order();
-        $order->fill($request->all());
-        $order->save();
-        Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
-      //  return redirect()->back();
+        $paymentType = $request->Cash_On_Delivery;
+        if ($paymentType == 'Cash') {
+            $order = new Order();
+            $order->subtotal = Session::get('subtotal');
+            $cartProducts = Cart::content();
+            foreach ($cartProducts as $cartProduct) {
+                $order = new Order();
+                //$order->fill($request->all());
+                $order->name=$request->name;
+                $order->mobile=$request->mobile;
+                $order->address=$request->address;
+                $order->city=$request->city;
+                $order->email=$request->email;
+                $order->postcode=$request->postcode;
+                $order->coupon=$request->coupon;
+                $order->invoice_number=$request->invoice_number;
+                $order->Cash_On_Delivery=$request->Cash_On_Delivery;
 
+                $order->subtotal=$request->subtotal;
+               
+                $order->comments=$request->comments;
 
-      //return redirect('/checkout/my-home');
-      return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
-
-
-
+                $order->save();
+                Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
+                return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
+            }
+       }
     }
 
     public function customerHome()
     {
-       
-       return view('front.customer.customerHome');
-       
+
+        return view('front.customer.customerHome');
     }
 
 
@@ -71,7 +101,6 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-       
     }
 
     /**

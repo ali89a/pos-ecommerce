@@ -294,9 +294,9 @@
                                                         </p>
                                                         <div class="button-group">
                                                             <a href="{{route('add.cart',$product->id)}}"><button class="addToCart" title="Add to Cart" type="button" onclick="cart.add('69');"><i class="fa fa-shopping-cart"></i>
-                                                                <span>Add to
-                                                                    Cart</span>
-                                                            </button></a>
+                                                                    <span>Add to
+                                                                        Cart</span>
+                                                                </button></a>
                                                             <button class="btn-button wishlist" type="button" title="Add to Wish List" onclick="wishlist.add('69');"><i class="fa fa-heart"></i><span>Add to Wish
                                                                     List</span>
                                                             </button>

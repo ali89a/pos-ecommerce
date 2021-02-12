@@ -15,6 +15,9 @@
 			<h2 class="title">Checkout</h2>
 			<div class="so-onepagecheckout row">
 				<form method="POST" action="{{route('orders.store')}}">
+					{{-- <form method="POST" action="{{route('new-order')}}"> --}}
+
+
 					@csrf
 					<div class="col-left col-sm-3">
 						<div class="panel panel-default">
@@ -120,9 +123,10 @@
 										<div class="panel-body">
 											<p>Please select the preferred payment method to use on this order.</p>
 											<div class="radio">
-												<label>
-													<input type="radio" checked="checked" name="Cash On Delivery">Cash On Delivery</label>
-											</div>
+												{{-- <label><input type="radio" checked="checked" name="Cash On Delivery">Cash On Delivery</label> --}}
+												<label><input type="radio"  name="Cash On Delivery" value="Cash">Cash On Delivery</label>
+													{{-- <input type="radio" name="payment_type" value="Cash"> --}}
+												</div>
 
 											<div class="radio">
 												<label>
@@ -155,7 +159,7 @@
 
 										<div class="col-sm-6">
 											<div class="input-group">
-												<input type="text" class="form-control" id="input-voucher" placeholder="Enter your gift voucher code here" value="" name="voucher">
+												<input type="text" class="form-control" id="input-voucher" placeholder="Enter your gift voucher code here" value="" name="invoice_number">
 												<span class="input-group-btn">
 													<input type="submit" class="btn btn-primary" data-loading-text="Loading..." id="button-voucher" value="Apply Voucher">
 												</span>
@@ -242,6 +246,7 @@
 														<td class="text-right" colspan="4"><strong>Total:</strong></td>
 														{{-- <td class="text-right">$121.85</td> --}}
 														<td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
+														
 													</tr>
 												</tfoot>
 											</table>
