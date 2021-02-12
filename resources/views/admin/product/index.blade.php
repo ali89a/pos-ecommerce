@@ -40,7 +40,7 @@ Product List
                                     <th class="text-center">Category</th>
                                     <th class="text-center">Name</th>
                                     <th class="text-center">Code</th>
-                                    <th class="text-center">Bar Code</th>
+                                    <th class="text-center">Discount</th>
                                     <th class="text-center">Image</th>
                                     <th class="text-center">Sale Price</th>
                                     <th>Action</th>
@@ -53,11 +53,12 @@ Product List
                                     <td class="text-center">{{ $row->product_category->name ?? ''}}</td>
                                     <td class="text-center">{{ $row->name ?? ''}}</td>
                                     <td class="text-center">{{ $row->code ?? ''}}</td>
-                                    <td class="text-center">
+                                    <td class="text-center">{{ $row->discount ?? ''}}</td>
+                                    <!-- <td class="text-center">
 
                                         <img width="auto" height="auto" src="{{asset(\Storage::url($row->barcode_path))}}"
                                             alt="{{ $row->code}}">
-                                    </td>
+                                    </td> -->
                                     <td class="text-center">
 
                                         <img width="auto" height="50" src="{{asset(\Storage::url($row->img_url))}}"

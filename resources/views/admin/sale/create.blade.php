@@ -32,7 +32,8 @@ Product
           <div class="card-header">
             <h3 class="card-title" style="color:#115548;">Sale List</h3>
             <div class="card-tools">
-              <a href="{{route('sale.index')}}"><button class="btn btn-sm btn-primary"><i class="fa fa-plus-circle"
+              <a href="{{route('sale.index')}}"><button class="btn btn-sm btn-primary">
+              <i class="fa fa-list"
                     aria-hidden="true"></i> &nbsp;Sale List</button></a>
             </div>
           </div>

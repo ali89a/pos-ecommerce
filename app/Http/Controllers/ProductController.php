@@ -49,7 +49,7 @@ class ProductController extends Controller
     public function fetch_products_by_cat_id($id)
     {
 
-        $products = Product::where(['product_status' => 'active', 'product_category_id' => $id])->get();
+        $products = Product::where(['status' => 'active', 'product_category_id' => $id])->get();
 
         $data = [
 
@@ -92,6 +92,7 @@ class ProductController extends Controller
 
         $pro->alert_quantity = $request->alert_quantity;
         $pro->selling_price = $request->selling_price;
+        $pro->discount = $request->discount;
         $pro->code = \App\Classes\ProductCode::serial_number();
         $pro->creator_user_id = \Auth::id();
 
@@ -161,6 +162,7 @@ class ProductController extends Controller
 
         $product->alert_quantity = $request->alert_quantity;
         $product->selling_price = $request->selling_price;
+        $product->discount = $request->discount;
         $product->updator_user_id = \Auth::id();
         if ($request->img_url != null) {
             $fileName = time() . '.' . $request->img_url->extension();

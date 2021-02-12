@@ -71,8 +71,8 @@ Product
                 ['placeholder'=>'Enter Selling Price','required'=>'required'] ) !!}
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                {!! BootForm::text('alert_quantity', 'Alert Quantity', null,
-                ['placeholder'=>'Enter Alert Quantity','required'=>'required'] ) !!}
+                {!! BootForm::text('discount', 'Discount', null,
+                ['placeholder'=>'Enter Discount','required'=>'required'] ) !!}
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 

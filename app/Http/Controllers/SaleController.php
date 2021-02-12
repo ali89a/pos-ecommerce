@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\ProductCategory;
-use App\Model\Sale;
 use Carbon\Carbon;
+use App\Model\Sale;
+use App\Model\SaleItem;
 use Illuminate\Http\Request;
+use App\Model\ProductCategory;
+use Illuminate\Support\Facades\DB;
+use Brian2694\Toastr\Facades\Toastr;
 use niklasravnsborg\LaravelPdf\Facades\Pdf;
 
 class SaleController extends Controller
@@ -20,7 +23,6 @@ class SaleController extends Controller
             'sales' => Sale::all(),
         ];
         return view($this->path('index'), $data);
-
     }
 
     public function create()
@@ -31,7 +33,6 @@ class SaleController extends Controller
         ];
 
         return view($this->path('create'), $data);
-
     }
 
     public function store(Request $request)
@@ -43,7 +44,7 @@ class SaleController extends Controller
         ]);
         \DB::beginTransaction();
 
-// dd( $request->all());
+        // dd( $request->all());
 
         $sale = new Sale();
         $sale->invoice_number = \App\Classes\SaleNumber::serial_number();
@@ -60,17 +61,24 @@ class SaleController extends Controller
         $products = $request->get('products');
 
         foreach ($products as $row) {
-            $sale->items()->create($row);
-        }
-        foreach ($products as $row) {
+
+            $sale_item = new SaleItem();
+            $sale_item->product_id = $row['product_id'];
+            $sale_item->sale_price = $row['sale_price'];
+            $sale_item->discount = $row['discount'] ?? 0;
+            $sale_item->quantity = $row['quantity'];
+            $sale_item->sale_id = $sale->id;
+            $sale_item->save();
+
             $sale->stock_out_items()->create($row);
         }
 
-        \DB::commit();
 
-        \Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
-        return back();
 
+        DB::commit();
+
+        Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
+        return redirect()->route('sale.index');
     }
 
     public function pdf($id)
@@ -80,7 +88,8 @@ class SaleController extends Controller
 
         ];
 
-        $pdf = PDF::loadView('admin.sale.pdf',
+        $pdf = PDF::loadView(
+            'admin.sale.pdf',
             $data,
             [],
             [
@@ -100,11 +109,11 @@ class SaleController extends Controller
                 1, // margin footer
                 'L', // L - landscape, P - portrait
 
-            ]);
+            ]
+        );
         $name = \Carbon\Carbon::now()->format('d-m-Y');
 
         return $pdf->stream($name . '.pdf');
-
     }
     public function pdfDownload($id)
     {
@@ -113,7 +122,8 @@ class SaleController extends Controller
 
         ];
 
-        $pdf = PDF::loadView('admin.sale.pdf',
+        $pdf = PDF::loadView(
+            'admin.sale.pdf',
             $data,
             [],
             [
@@ -133,11 +143,11 @@ class SaleController extends Controller
                 1, // margin footer
                 'L', // L - landscape, P - portrait
 
-            ]);
+            ]
+        );
         $name = \Carbon\Carbon::now()->format('d-m-Y');
 
         return $pdf->download($name . '.pdf');
-
     }
     public function show(Sale $sale)
     {
@@ -147,7 +157,6 @@ class SaleController extends Controller
         ];
 
         return view($this->path('show'), $data);
-
     }
 
     public function edit(Sale $sale)

@@ -74,7 +74,7 @@ Product
                                   <tr>
                                     <th>Product Name</th>
                                     <th>Unit</th>
-                                    <th>quantity</th>
+                                    <th>Qty</th>
                                     <th>Buying Price</th>
                                     <th>Selling Price</th>
                                     <th>Subtotal</th>
