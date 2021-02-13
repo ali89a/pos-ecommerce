@@ -87,8 +87,8 @@
                             <div class="left-block">
                                 <div class="product-image-container second_img">
                                     <a href="product.html" target="_self" title="Doenpuis consuat ">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/5.jpg" class="img-1 img-responsive" alt="image">
-                                        <img src="{{ asset('front') }}/image/catalog/demo/product/funiture/6.jpg" class="img-2 img-responsive" alt="image">
+                                        <img src="{{asset('storage/'.$product->img_url)}}" class="img-1 img-responsive" alt="image">
+                                        <img src="{{asset('storage/'.$product->img_url)}}" class="img-2 img-responsive" alt="image">
                                     </a>
                                 </div>
                                 <div class="box-label"> <span class="label-product label-sale"> -13% </span><span class="label-product label-new"> New </span>
@@ -101,7 +101,8 @@
                                     </button>
                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this Product</span>
                                     </button>
-                                    <!--quickview--> <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                    <!--quickview--> 
+                                    <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
                                     <!--end quickview-->
                                 </div>
                             </div>
