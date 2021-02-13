@@ -85,6 +85,7 @@ class ProductController extends Controller
         $pro->status = $request->status;
         $pro->best_seller = $request->best_seller;
         $pro->feature = $request->feature;
+        $pro->new = $request->new;
         $pro->name = $request->name;
         $pro->slug = Str::slug($request->name, '-');
 

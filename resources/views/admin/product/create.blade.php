@@ -88,6 +88,12 @@ Product
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
+                {!! BootForm::select('new', 'New',['active'=>'Active','inactive'=>'Inactive'],
+                null,
+                ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
                 {!! BootForm::select('best_seller', 'Best Seller',['active'=>'Active','inactive'=>'Inactive'],
                 null,
                 ['class'=>'select2','placeholder'=>'Select one','required'=>'required'] ) !!}
