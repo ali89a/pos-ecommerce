@@ -93,8 +93,8 @@
                         <!-- Logo -->
                         <div class="navbar-logo col-lg-2 col-md-3 col-sm-12 col-xs-12">
                             <div class="logo">
-                                <!-- <a href="{{ route('front') }}"><img src="{{ asset('front') }}/image/catalog/logo4.png"
-                                        title="Your Store" alt="Your Store" /></a> -->
+                                <a href="{{ route('front') }}"><img src="{{ asset('front') }}/logo4.png"
+                                        title="Your Store" alt="Your Store" /></a>
                             </div>
                         </div>
                         <!-- //end Logo -->
