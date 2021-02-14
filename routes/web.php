@@ -57,10 +57,6 @@ Route::get('/checkout', 'FrontController@checkout')->name('checkout');
  Route::get('/checkout/my-home', 'OrderController@customerHome');
  //Route::get('/customerHome', 'FrontController@customer');
  
-//  Route::post('/checkout/order', [
-//     'uses'  =>  'CheckoutController@newOrder',
-//     'as'    =>  'new-order'
-// ]);
 
 
 

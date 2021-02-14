@@ -227,8 +227,8 @@
 												<tfoot>
 													<tr>
 														<td class="text-right" colspan="4"><strong>Sub-Total:</strong></td>
-														{{-- <td class="text-right">$93.73</td> --}}
 														<td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
+														<input type="hidden" value="{{$total}}" name="subtotal">
 													</tr>
 													<tr>
 														<td class="text-right" colspan="4"><strong>Flat Shipping Rate:</strong></td>
@@ -244,9 +244,8 @@
 													</tr>
 													<tr>
 														<td class="text-right" colspan="4"><strong>Total:</strong></td>
-														{{-- <td class="text-right">$121.85</td> --}}
 														<td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
-														
+														<input type="hidden" value="{{$total}}" name="grandtotal">
 													</tr>
 												</tfoot>
 											</table>
