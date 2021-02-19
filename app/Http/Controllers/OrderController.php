@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Brian2694\Toastr\Facades\Toastr;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Session;
+use App\OrderItem;
+
 
 class OrderController extends Controller
 {
@@ -55,7 +57,19 @@ class OrderController extends Controller
             $order->grandtotal = $request->grandtotal;
             $order->comments = $request->comments;
             $order->save();
-         
+
+            $cartProducts = Cart::content();
+            foreach ($cartProducts as $cartProduct) {
+                $orderDetail = new OrderItem();
+                $orderDetail->order_id  = $order->id;
+                $orderDetail->product_id  = $cartProduct->id;
+                $orderDetail->product_name  = $cartProduct->name;
+                $orderDetail->product_price  = $cartProduct->price;
+                $orderDetail->product_Quantity  = $cartProduct->qty;
+                $orderDetail->save();
+            }
+            Cart::destroy();
+
             Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
             return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
             // }
@@ -71,7 +85,6 @@ class OrderController extends Controller
 
     public function show(Order $order)
     {
-
     }
 
 

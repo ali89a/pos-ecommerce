@@ -15,15 +15,15 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 20);
-            $table->string('mobile', 20);
-            $table->string('address', 20);
-            $table->string('city', 20);
-            $table->string('email', 20);
-            $table->string('postcode', 20)->nullable();
-            $table->string('Cash_On_Delivery', 20);//->nullable();
-            $table->string('coupon', 20)->nullable();
-            $table->string('invoice_number', 20)->nullable();
+            $table->string('name', 50);
+            $table->string('mobile', 50);
+            $table->string('address', 50);
+            $table->string('city', 50);
+            $table->string('email', 50);
+            $table->string('postcode', 50)->nullable();
+            $table->string('Cash_On_Delivery', 50);//->nullable();
+            $table->string('coupon', 50)->nullable();
+            $table->string('invoice_number', 50)->nullable();
             $table->double('subtotal', 15, 2);//->nullable();
             $table->double('discount', 8, 2)->nullable();
             $table->double('grandtotal', 15, 2)->nullable();
