@@ -23,13 +23,22 @@
 
                     <div class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
                         <div class="large-image  ">
-                            <img itemprop="image" class="product-image-zoom" src="{{asset('storage/'.$product->img_url)}}" data-zoom-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha" alt="Chicken swinesha">
+                            <img itemprop="image" class="product-image-zoom"
+                                src="{{asset('storage/'.$product->img_url)}}"
+                                data-zoom-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha"
+                                alt="Chicken swinesha">
                         </div>
                         <!-- <a class="thumb-video pull-left" href="https://www.youtube.com/watch?v=HhabgvIIXik"><i class="fa fa-youtube-play"></i></a> -->
 
-                        <div id="thumb-slider" class="yt-content-slider full_slider owl-drag" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="10" data-items_column0="4" data-items_column1="3" data-items_column2="4" data-items_column3="1" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
-                            <a data-index="0" class="img thumbnail " data-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha">
-                                <img src="{{asset('storage/'.$product->img_url)}}" title="{{$product->name}}" alt="{{$product->name}}">
+                        <div id="thumb-slider" class="yt-content-slider full_slider owl-drag" data-rtl="yes"
+                            data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="10"
+                            data-items_column0="4" data-items_column1="3" data-items_column2="4" data-items_column3="1"
+                            data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes"
+                            data-loop="no" data-hoverpause="yes">
+                            <a data-index="0" class="img thumbnail "
+                                data-image="{{asset('storage/'.$product->img_url)}}" title="Chicken swinesha">
+                                <img src="{{asset('storage/'.$product->img_url)}}" title="{{$product->name}}"
+                                    alt="{{$product->name}}">
                             </a>
                         </div>
 
@@ -51,16 +60,22 @@
                                 </div>
                             </div>
 
-                            <a class="reviews_button" href="#" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">0 reviews</a> |
-                            <a class="write_review_button" href="#" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Write a review</a>
+                            <a class="reviews_button" href="#"
+                                onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">0 reviews</a> |
+                            <a class="write_review_button" href="#"
+                                onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">Write a
+                                review</a>
                         </div>
 
                         <div class="product-label form-group">
-                            <div class="product_page_price price" itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
-                                <span class="price-new" itemprop="price">{{$product->selling_price - $product->discount}}</span>
+                            <div class="product_page_price price" itemprop="offerDetails" itemscope=""
+                                itemtype="http://data-vocabulary.org/Offer">
+                                <span class="price-new"
+                                    itemprop="price">{{$product->selling_price - $product->discount}}</span>
                                 <span class="price-old">{{$product->selling_price}}</span>
                             </div>
-                            <div class="stock"><span>Availability:</span> <span class="status-stock">In Stock</span></div>
+                            <div class="stock"><span>Availability:</span> <span class="status-stock">In Stock</span>
+                            </div>
                         </div>
 
                         <div class="product-box-desc">
@@ -125,7 +140,8 @@
 
                             <div class="form-group box-info-product" id="vue_app">
                                 <div class="option quantity">
-                                    <div class="input-group quantity-control" unselectable="on" style="-webkit-user-select: none;">
+                                    <div class="input-group quantity-control" unselectable="on"
+                                        style="-webkit-user-select: none;">
                                         <label>Qty</label>
                                         <input class="form-control" type="text" name="quantity" value="1">
                                         <input type="hidden" name="product_id" value="50">
@@ -134,7 +150,11 @@
                                     </div>
                                 </div>
                                 <div class="cart">
-                                    <input type="button" data-toggle="tooltip" title="" value="Add to Cart" data-loading-text="Loading..." id="button-cart" class="btn btn-mega btn-lg" @click="add_cart" data-original-title="Add to Cart">
+                                    <a href="{{route('add.cart',$product->id)}}">
+                                        <input type="button" data-toggle="tooltip" title="" value="Add to Cart"
+                                            data-loading-text="Loading..." id="button-cart" class="btn btn-mega btn-lg"
+                                            @click="add_cart" data-original-title="Add to Cart">
+                                    </a>
                                 </div>
                                 <div class="add-to-links wish_comp">
                                     <!-- <ul class="blank list-inline">
@@ -186,11 +206,20 @@
                                                     <p>Best this product opencart</p>
                                                     <div class="ratings">
                                                         <div class="rating-box">
-                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i
+                                                                    class="fa fa-star fa-stack-1x"></i><i
+                                                                    class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i
+                                                                    class="fa fa-star fa-stack-1x"></i><i
+                                                                    class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i
+                                                                    class="fa fa-star fa-stack-1x"></i><i
+                                                                    class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i
+                                                                    class="fa fa-star fa-stack-1x"></i><i
+                                                                    class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i
+                                                                    class="fa fa-star-o fa-stack-1x"></i></span>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -202,12 +231,17 @@
                                 <h2 id="review-title">Write a review</h2>
                                 <div class="contacts-form">
                                     <div class="form-group"> <span class="icon icon-user"></span>
-                                        <input type="text" name="name" class="form-control" value="Your Name" onblur="if (this.value == '') {this.value = 'Your Name';}" onfocus="if(this.value == 'Your Name') {this.value = '';}">
+                                        <input type="text" name="name" class="form-control" value="Your Name"
+                                            onblur="if (this.value == '') {this.value = 'Your Name';}"
+                                            onfocus="if(this.value == 'Your Name') {this.value = '';}">
                                     </div>
                                     <div class="form-group"> <span class="icon icon-bubbles-2"></span>
-                                        <textarea class="form-control" name="text" onblur="if (this.value == '') {this.value = 'Your Review';}" onfocus="if(this.value == 'Your Review') {this.value = '';}">Your Review</textarea>
+                                        <textarea class="form-control" name="text"
+                                            onblur="if (this.value == '') {this.value = 'Your Review';}"
+                                            onfocus="if(this.value == 'Your Review') {this.value = '';}">Your Review</textarea>
                                     </div>
-                                    <span style="font-size: 11px;"><span class="text-danger">Note:</span> HTML is not translated!</span>
+                                    <span style="font-size: 11px;"><span class="text-danger">Note:</span> HTML is not
+                                        translated!</span>
 
                                     <div class="form-group">
                                         <b>Rating</b> <span>Bad</span>&nbsp;
@@ -218,7 +252,8 @@
                                         <input type="radio" name="rating" value="5"> &nbsp;<span>Good</span>
 
                                     </div>
-                                    <div class="buttons clearfix"><a id="button-review" class="btn buttonGray">Continue</a></div>
+                                    <div class="buttons clearfix"><a id="button-review"
+                                            class="btn buttonGray">Continue</a></div>
                                 </div>
                             </form>
                         </div>
