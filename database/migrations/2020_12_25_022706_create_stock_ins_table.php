@@ -28,7 +28,6 @@ class CreateStockInsTable extends Migration
             $table->Integer('purchase_id')->unsigned();
             $table->foreign('purchase_id')->references('id')->on('purchases')->onDelete('cascade');
             $table->softDeletes();
-
             $table->timestamps();
         });
     }

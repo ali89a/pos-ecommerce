@@ -35,6 +35,7 @@ class CreateProductsTable extends Migration
             $table->enum('best_seller', ['active', 'inactive']);
             $table->enum('feature', ['active', 'inactive']);
             $table->enum('new', ['active', 'inactive']);
+            $table->enum('top', ['active', 'inactive'])->default('active');
             $table->unsignedBigInteger('creator_user_id')->nullable();
             $table->foreign('creator_user_id')->references('id')->on('users')->onDelete('restrict');
             $table->unsignedBigInteger('updator_user_id')->nullable();

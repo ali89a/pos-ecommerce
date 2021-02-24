@@ -23,7 +23,6 @@ class CreateStockOutsTable extends Migration
             $table->Integer('sale_id')->unsigned();
             $table->foreign('sale_id')->references('id')->on('sales')->onDelete('cascade');
             $table->softDeletes();
-
             $table->timestamps();
         });
     }

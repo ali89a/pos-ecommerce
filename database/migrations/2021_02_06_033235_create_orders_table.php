@@ -21,9 +21,12 @@ class CreateOrdersTable extends Migration
             $table->string('city', 50);
             $table->string('email', 50);
             $table->string('postcode', 50)->nullable();
-            $table->string('Cash_On_Delivery', 50);//->nullable();
+            $table->string('delivery_method', 50);//->nullable();
+            $table->string('payment_method', 50);//->nullable();
+            $table->string('shipping_method', 50);//->nullable();
             $table->string('coupon', 50)->nullable();
             $table->string('invoice_number', 50)->nullable();
+            $table->double('shipping_cost', 15, 2)->nullable();
             $table->double('subtotal', 15, 2);//->nullable();
             $table->double('discount', 8, 2)->nullable();
             $table->double('grandtotal', 15, 2)->nullable();

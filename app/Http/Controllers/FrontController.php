@@ -12,7 +12,8 @@ class FrontController extends Controller
         $best_seller_products = Product::where('status', 'active')->where('best_seller', 'active')->get();
         $offer_zone_products = Product::where('status', 'active')->where('discount', '>', 0)->get();
         $feature_products = Product::where('status', 'active')->where('feature', 'active')->get();
-        return view('front-home', compact('best_seller_products', 'feature_products','offer_zone_products'));
+        $top_products = Product::where('status', 'active')->where('top', 'active')->get();
+        return view('front-home', compact('best_seller_products', 'feature_products','offer_zone_products','top_products'));
     }
     public function bestSeller()
     {

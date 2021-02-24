@@ -40,8 +40,8 @@ class OrderController extends Controller
 
     public function store(Request $request)
     {
-        $paymentType = $request->Cash_On_Delivery;
-        if ($paymentType == 'Cash') {
+        //dd($request->all());
+       
             $order = new Order();
             //$order->fill($request->all());
             $order->name = $request->name;
@@ -52,10 +52,11 @@ class OrderController extends Controller
             $order->postcode = $request->postcode;
             $order->coupon = $request->coupon;
             $order->invoice_number = $request->invoice_number;
-            $order->Cash_On_Delivery = $request->Cash_On_Delivery;
+            $order->payment_method = $request->payment_method ?? '';
+            $order->delivery_method = $request->delivery_method ?? '';
+            $order->shipping_method = $request->shipping_method ?? '';
             $order->subtotal = $request->subtotal;
             $order->grandtotal = $request->grandtotal;
-            $order->comments = $request->comments;
             $order->save();
 
             $cartProducts = Cart::content();
@@ -73,7 +74,7 @@ class OrderController extends Controller
             Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
             return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
             // }
-        }
+       
     }
 
 
