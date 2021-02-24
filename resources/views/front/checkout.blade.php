@@ -105,13 +105,13 @@
 											<p>Please select the preferred shipping method to use on this order.</p>
 											<div class="radio">
 												<label>
-													<input type="radio" checked="checked" name="Free Shipping">
-													Free Shipping - $0.00</label>
+													<input type="radio" name="shipping_method">
+													Inside Dhaka - 60.00</label>
 											</div>
 											<div class="radio">
 												<label>
-													<input type="radio" name="Flat Shipping Rate">
-													Flat Shipping Rate - $7.50</label>
+													<input type="radio" name="shipping_method">
+													Outside Dhaka - 100.00</label>
 											</div>
 
 										</div>
@@ -123,14 +123,11 @@
 										<div class="panel-body">
 											<p>Please select the preferred payment method to use on this order.</p>
 											<div class="radio">
-												{{-- <label><input type="radio" checked="checked" name="Cash On Delivery">Cash On Delivery</label> --}}
-												<label><input type="radio"  name="Cash On Delivery" value="Cash">Cash On Delivery</label>
-													{{-- <input type="radio" name="payment_type" value="Cash"> --}}
-												</div>
-
+												<label><input type="radio" name="payment_method" value="Cash">Cash On Delivery</label>
+											</div>
 											<div class="radio">
 												<label>
-													<input type="radio" name="Paypal">Paypal</label>
+													<input type="radio" name="payment_method">Paypal</label>
 											</div>
 										</div>
 									</div>
@@ -145,7 +142,7 @@
 							<div class="col-sm-12">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										<h4 class="panel-title"><i class="fa fa-ticket"></i> Do you Have a Coupon or Voucher?</h4>
+										<h4 class="panel-title"><i class="fa fa-ticket"></i> Do you Have a Coupon?</h4>
 									</div>
 									<div class="panel-body row">
 										<div class="col-sm-6 ">
@@ -153,15 +150,6 @@
 												<input type="text" class="form-control" id="input-coupon" placeholder="Enter your coupon here" value="" name="coupon">
 												<span class="input-group-btn">
 													<input type="button" class="btn btn-primary" data-loading-text="Loading..." id="button-coupon" value="Apply Coupon">
-												</span>
-											</div>
-										</div>
-
-										<div class="col-sm-6">
-											<div class="input-group">
-												<input type="text" class="form-control" id="input-voucher" placeholder="Enter your gift voucher code here" value="" name="invoice_number">
-												<span class="input-group-btn">
-													<input type="submit" class="btn btn-primary" data-loading-text="Loading..." id="button-voucher" value="Apply Voucher">
 												</span>
 											</div>
 										</div>
@@ -203,18 +191,7 @@
 														<td class="text-left"><a href="{{route('single.product',$row->options->slug)}}"><?php echo $row->name; ?></a>
 														</td>
 														<td class="text-left">
-															<form action="{{route('update.cart',$row->rowId )}}" method="POST" enctype="multipart/form-data">
-																@csrf
-																<div class="input-group btn-block" style="max-width: 200px;">
-																	<input type="hidden" name="rowId" value="<?php echo $row->rowId; ?>">
-																	<input type="text" name="qty" value="<?php echo $row->qty; ?>" size="1" class="form-control">
-
-																	<span class="input-group-btn">
-																		<button type="submit" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
-																		<a href="{{route('remove.product',$row->rowId )}}"><button type="button" data-toggle="tooltip" title="" class="btn btn-danger" onclick="cart.remove('1059');" data-original-title="Remove"><i class="fa fa-times-circle"></i></button></a>
-																	</span>
-																</div>
-															</form>
+														<?php echo $row->qty; ?>
 														</td>
 														<td class="text-right">&#x9F3; <?php echo $row->price; ?></td>
 														<td class="text-right">&#x9F3; <?php echo $row->priceTotal; ?></td>
@@ -227,24 +204,20 @@
 												<tfoot>
 													<tr>
 														<td class="text-right" colspan="4"><strong>Sub-Total:</strong></td>
-														<td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
+														<td class="text-right">&#x9F3; <?php echo Cart::subtotal(); ?></td>
 														<input type="hidden" value="{{$total}}" name="subtotal">
 													</tr>
 													<tr>
-														<td class="text-right" colspan="4"><strong>Flat Shipping Rate:</strong></td>
-														<td class="text-right">$4.69.00</td>
+														<td class="text-right" colspan="4"><strong>Coupon Discount:</strong></td>
+														<td class="text-right">&#x9F3; 4.69.00</td>
 													</tr>
 													<tr>
-														<td class="text-right" colspan="4"><strong>Eco Tax (-2.00):</strong></td>
-														<td class="text-right">$3.75.00</td>
-													</tr>
-													<tr>
-														<td class="text-right" colspan="4"><strong>VAT (20%):</strong></td>
-														<td class="text-right">$19.68</td>
+														<td class="text-right" colspan="4"><strong>Shipping Cost:</strong></td>
+														<td class="text-right">&#x9F3; 4.69.00</td>
 													</tr>
 													<tr>
 														<td class="text-right" colspan="4"><strong>Total:</strong></td>
-														<td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
+														<td class="text-right">&#x9F3; <?php echo Cart::subtotal(); ?></td>
 														<input type="hidden" value="{{$total}}" name="grandtotal">
 													</tr>
 												</tfoot>
@@ -256,11 +229,9 @@
 							<div class="col-sm-12">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										<h4 class="panel-title"><i class="fa fa-pencil"></i> Add Comments About Your Order</h4>
+										<h4 class="panel-title"><i class="fa fa-pencil"></i> Terms & Conditions </h4>
 									</div>
 									<div class="panel-body">
-										<textarea rows="4" class="form-control" id="confirm_comment" name="comments"></textarea>
-										<br>
 										<label class="control-label" for="confirm_agree">
 											<input type="checkbox" checked="checked" value="1" required="" class="validate required" id="confirm_agree" name="confirm agree">
 											<span>I have read and agree to the <a class="agree" href="#"><b>Terms &amp; Conditions</b></a></span> </label>
