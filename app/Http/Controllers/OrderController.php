@@ -13,9 +13,17 @@ use App\OrderItem;
 class OrderController extends Controller
 {
 
+    protected function path(string $suffix)
+    {
+        return "admin.order.{$suffix}";
+    }
+
     public function index()
     {
-        //
+        $data = [
+            'orders' => Order::all(),
+        ];
+        return view($this->path('index'), $data);
     }
 
 

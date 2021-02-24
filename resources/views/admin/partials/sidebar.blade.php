@@ -130,6 +130,28 @@
             </li>
             @endif
             @if( Gate::check('User List') || Gate::check('Role List'))
+            <li class="nav-item has-treeview {{ ( Request::segment(1) == 'orders' )?'menu-open':''}}">
+                <a href="#" class="nav-link {{ ( Request::segment(1) == 'orders')?'active-color':''}}">
+                    <i class="nav-icon fa fa-info-circle" aria-hidden="true"></i>
+                    <p>
+                        Ecommerce
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview" style="margin-left: 15px;">
+                    @can('User List')
+                    <li class="nav-item">
+                        <a href="{{route('orders.index')}}"
+                            class="nav-link {{ ( Request::segment(1) == 'orders' )?'active-color':''}}">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                            <p>Order</p>
+                        </a>
+                    </li>
+                    @endcan
+                </ul>
+            </li>
+            @endif
+            @if( Gate::check('User List') || Gate::check('Role List'))
             <li class="nav-item has-treeview {{ ( Request::segment(1) == 'access-control' )?'menu-open':''}}">
                 <a href="#" class="nav-link {{ ( Request::segment(1) == 'access-control')?'active-color':''}}">
                     <i class="nav-icon fas fa-cog"></i>
