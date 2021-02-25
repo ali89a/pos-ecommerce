@@ -8,6 +8,7 @@ use Brian2694\Toastr\Facades\Toastr;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Session;
 use App\OrderItem;
+use Illuminate\Support\Facades\Mail;
 
 
 class OrderController extends Controller
@@ -32,57 +33,48 @@ class OrderController extends Controller
         //
     }
 
-
-    // public function store(Request $request)
-    // {
-    //   //  dd($request->all());
-    //     $order=new Order();
-    //     $order->fill($request->all());
-    //     $order->save();
-    //     Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
-    //   //  return redirect()->back();
-    //   //return redirect('/checkout/my-home');
-    //   return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
-    // }
-
-
     public function store(Request $request)
     {
         //dd($request->all());
-       
-            $order = new Order();
-            //$order->fill($request->all());
-            $order->name = $request->name;
-            $order->mobile = $request->mobile;
-            $order->address = $request->address;
-            $order->city = $request->city;
-            $order->email = $request->email;
-            $order->postcode = $request->postcode;
-            $order->coupon = $request->coupon;
-            $order->invoice_number = $request->invoice_number;
-            $order->payment_method = $request->payment_method ?? '';
-            $order->delivery_method = $request->delivery_method ?? '';
-            $order->shipping_method = $request->shipping_method ?? '';
-            $order->subtotal = $request->subtotal;
-            $order->grandtotal = $request->grandtotal;
-            $order->save();
+        $order = new Order();
+        //$order->fill($request->all());
+        $order->name = $request->name;
+        $order->mobile = $request->mobile;
+        $order->address = $request->address;
+        $order->city = $request->city;
+        $order->email = $request->email;
+        $order->postcode = $request->postcode;
+        $order->coupon = $request->coupon;
+        $order->invoice_number = $request->invoice_number;
+        $order->payment_method = $request->payment_method ?? '';
+        $order->delivery_method = $request->delivery_method ?? '';
+        $order->shipping_method = $request->shipping_method ?? '';
+        $order->subtotal = $request->subtotal;
+        $order->grandtotal = $request->grandtotal;
 
-            $cartProducts = Cart::content();
-            foreach ($cartProducts as $cartProduct) {
-                $orderDetail = new OrderItem();
-                $orderDetail->order_id  = $order->id;
-                $orderDetail->product_id  = $cartProduct->id;
-                $orderDetail->product_name  = $cartProduct->name;
-                $orderDetail->product_price  = $cartProduct->price;
-                $orderDetail->product_Quantity  = $cartProduct->qty;
-                $orderDetail->save();
-            }
-            Cart::destroy();
+        $user = $order->toArray();
+        Mail::send('front.mail', $user, function ($message) use ($user) {
+            $message->to($user['email']);
+            $message->subject('Welcome Mail');
+        });
+        // dd('Mail Send Successfully');
+        $order->save();
 
-            Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
-            return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
-            // }
-       
+        $cartProducts = Cart::content();
+        foreach ($cartProducts as $cartProduct) {
+            $orderDetail = new OrderItem();
+            $orderDetail->order_id  = $order->id;
+            $orderDetail->product_id  = $cartProduct->id;
+            $orderDetail->product_name  = $cartProduct->name;
+            $orderDetail->product_price  = $cartProduct->price;
+            $orderDetail->product_Quantity  = $cartProduct->qty;
+            $orderDetail->save();
+        }
+        Cart::destroy();
+        Toastr::success('Sale Order Successful!.', '', ["progressBar" => true]);
+        return redirect('/checkout/my-home')->with('message', 'Order info saved successfully');
+        // }
+
     }
 
 
