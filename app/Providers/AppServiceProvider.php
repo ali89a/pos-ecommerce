@@ -10,6 +10,8 @@ use DB;
 
 
 use App\Model\Product;
+use App\Slider;
+
 
 
 
@@ -49,7 +51,7 @@ class AppServiceProvider extends ServiceProvider
 
 
 
-        View::composer('front-home', function ($view) {
+        View()->composer('front-home', function ($view) {
             //  $category = ProductCategory::where('publicationStatus', 1)->get();
             // $product = Product::all();
             $product = Product::whereStatus('active')->get();
@@ -62,5 +64,12 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('*', function ($view) {
             $view->with('letest_products', Product::latest()->limit(5)->get());
         });
+
+        View::composer('*', function ($view) {
+            //  $category = ProductCategory::where('publicationStatus', 1)->get();
+            $sliders = Slider::all();
+            $view->with('sliders', $sliders);
+        });
+
     }
 }

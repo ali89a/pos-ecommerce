@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/clear-cache', function () {
     $exitCode = Artisan::call('config:clear');
     $exitCode = Artisan::call('cache:clear');
@@ -22,10 +23,9 @@ Route::get('/clear-cache', function () {
 
 // Route::get('/', function () {
 //     return view('home');
-   
 // });
-Route::get('/', 'FrontController@index')->name('front');
 
+Route::get('/', 'FrontController@index')->name('front');
 Route::get('/add-to-cart/{slug}', 'CartController@addCart')->name('add.cart');
 Route::get('/shopping-cart', 'CartController@shoppingCart')->name('shopping.cart');
 Route::get('/clear-cart', 'CartController@clearCart')->name('clear.cart');
@@ -51,12 +51,12 @@ Route::get('/user-login', 'FrontController@userLogin')->name('user.login');
 Route::get('/cart', 'FrontController@cart')->name('cart');
 Route::get('/checkout', 'FrontController@checkout')->name('checkout');
 
- Route::resource('orders', 'OrderController');
+Route::resource('orders', 'OrderController');
 
 
- Route::get('/checkout/my-home', 'OrderController@customerHome');
- //Route::get('/customerHome', 'FrontController@customer');
- 
+Route::get('/checkout/my-home', 'OrderController@customerHome');
+//Route::get('/customerHome', 'FrontController@customer');
+
 
 
 
@@ -67,7 +67,7 @@ Route::get('lang/{locale}', 'HomeController@lang');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('auth')->group(function () {
 
-   
+
     Route::resource('pos', 'PosController');
     Route::resource('product', 'ProductController');
     Route::get('fetch-product-by-category-id/{id}', 'ProductController@fetch_products_by_cat_id')->name('fetch-product-info');
@@ -91,16 +91,17 @@ Route::middleware('auth')->group(function () {
     Route::resource('sale', 'SaleController');
     Route::get('sale-pdf/{id}', 'SaleController@pdf')->name('sale.pdf');
     Route::get('sale-pdf-download/{id}', 'SaleController@pdfDownload')->name('sale.pdf-download');
-
 });
 Route::middleware('auth')->namespace('AccessControl')->prefix('access-control')->group(function () {
     Route::resource('user', 'UserController');
     Route::resource('role', 'RoleController');
+
+    Route::resource('slider', 'SliderController');
+
     Route::resource('permission', 'PermissionController');
     Route::resource('matrix', 'AclController');
     Route::post('change-role-permission', 'AclController@change_role_permission');
     Route::resource('route-permit', 'RoutePermitController');
     Route::get('user-permission-matrix', 'AclController@user_permission_matrix')->name('user-permission-matrix');
     Route::post('user-permission-matrix', 'AclController@store_user_permission_matrix')->name('user-permission-matrix.store');
-
 });
