@@ -50,7 +50,7 @@ Users List
                                             width="100">
                                     </td>
                                     <td>
-                                        @can('User Edit')
+                                        {{-- @can('User Edit') --}}
                                                 <div class="btn-group">
                                                     <form method="POST"
                                                           action="{{ route('slider.destroy',$row->id)}}"
@@ -64,7 +64,7 @@ Users List
                                                         </button>
                                                     </form>
                                                 </div>
-                                        @endcan
+                                        {{-- @endcan --}}
                                     </td>
                                 </tr>
                                 @endforeach

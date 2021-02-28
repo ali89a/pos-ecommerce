@@ -29,18 +29,20 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        {!! BootForm::open(['model' => $model, 'store' => 'slider.store', 'update' => 'slider.update','class'=>'form-horizontal','enctype'=>'multipart/form-data']);
+                        {!! BootForm::open(['model' => $model, 'store' => 'slider.store', 'update' => 'slider.update','class'=>'form-horizontal','enctype'=>'multipart/form-data','name'=>'editProductForm']);
                                                   !!}
 
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="form-group">
+                                        <input type="hidden" value="{{ $slider->id }}" name="id">
                                         <label for="customFile">Image</label>
                                         <div class="custom-file">
-                                            <input type="hidden" name="id" value="{{ $slider->id }}">
+                                          
                                             <input type="file" name="img_url" class="custom-file-input" id="customFile">
                                             <label class="custom-file-label" for="customFile">Choose file</label>
+                                            <img src="{{asset($slider->img_url)}}" alt="" height="150" width="150">
                                         </div>
                                     </div>
                                 </div>
@@ -62,6 +64,10 @@
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+    <script>
+        document.forms['editProductForm'].elements['img_url'].value={{$slider->img_url}}
+    </script>
+
 @endsection
 @push('script-bottom')
 

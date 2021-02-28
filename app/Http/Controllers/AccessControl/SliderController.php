@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Slider;
 use Picqer;
 use Illuminate\Support\Str;
-//use App\Http\Resources\SliderResource;
+use App\Http\Resources\SliderResource;
 
 
 
@@ -78,39 +78,43 @@ class SliderController extends Controller
 
     public function edit(Slider $slider)
     {
+        dd($slider->all());
         $data = [
             'model' => $slider
         ];
         return view($this->path('create'), $data);
     }
 
-    public function update(Request $request, Slider $slider)
-    {
+    protected function saveProductBasicInfo($request, $imageUrl){
+        $slider = Slider::find($request->id);
+        $slider->img_url = $imageUrl;
+        $slider->save();
+    }
+
+    public function update(Request $request) {
+       // dd($request->all());
+        $imageUrl = $this->imageExistStatus($request);
+        $this->saveProductBasicInfo($request, $imageUrl);
+        \Toastr::success('Product Created Successfully!.', '', ["progressBar" => true]);
+        return redirect()->route('slider.index');
+    }
+
+    protected function imageExistStatus($request) {
         $productById = Slider::where('id', $request->id)->first();
         $productImage = $request->file('img_url');
         if ($productImage) {
             unlink($productById->img_url);
             $imageName = $productImage->getClientOriginalName();
-            $uploadPath = 'product-images/';
+            $uploadPath = 'sliderFile/';
             $productImage->move($uploadPath, $imageName);
             $imageUrl = $uploadPath . $imageName;
         } else {
             $imageUrl = $productById->img_url;
         }
         return $imageUrl;
-
-        // if ($request->img_url != null) {
-        //     $fileName = time() . '.' . $request->img_url->extension();
-        //     $request->img_url->move(storage_path('app/public'), $fileName);
-        //     $slider->img_url = $fileName;
-        //     $slider->save();
-        // }
-       
-
-        // \Toastr::success('Product Updated Successfully!.', '', ["progressBar" => true]);
-        // return redirect()->route('slider.index');
     }
 
+   
     
     public function destroy(Slider $slider)
     {

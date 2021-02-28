@@ -9,7 +9,7 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 use Session;
 use App\OrderItem;
 use Illuminate\Support\Facades\Mail;
-
+use niklasravnsborg\LaravelPdf\Facades\Pdf;
 
 class OrderController extends Controller
 {
@@ -53,9 +53,18 @@ class OrderController extends Controller
         $order->grandtotal = $request->grandtotal;
 
         $user = $order->toArray();
-        Mail::send('front.mail', $user, function ($message) use ($user) {
+
+        // Mail::send('front.mail', $user, function ($message) use ($user) {
+        //     $message->to($user['email']);
+        //     $message->subject('Welcome Mail');
+
+        $pdf = PDF::loadView('front.mail', $user);
+
+        Mail::send('front.mail', $user, function ($message) use ($user, $pdf) {
             $message->to($user['email']);
             $message->subject('Welcome Mail');
+
+            $message->attachData($pdf->output(), "text.pdf");
         });
         // dd('Mail Send Successfully');
         $order->save();
