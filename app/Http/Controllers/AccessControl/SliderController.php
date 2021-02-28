@@ -78,11 +78,11 @@ class SliderController extends Controller
 
     public function edit(Slider $slider)
     {
-        dd($slider->all());
+    
         $data = [
             'model' => $slider
         ];
-        return view($this->path('create'), $data);
+        return view($this->path('edit'), $data);
     }
 
     protected function saveProductBasicInfo($request, $imageUrl){

@@ -22,7 +22,7 @@
                     <div class="card card-primary">
                         <div class="card-header bg-light">
 
-                            <h3 class="card-title" style="color:#115548;">Add Slider</h3>
+                            <h3 class="card-title" style="color:#115548;">Edit Slider</h3>
                             <div class="card-tools">
                                 <a href="{{route('slider.index')}}" ><button class="btn btn-sm btn-primary"><i class="fa fa-list" aria-hidden="true"></i> &nbsp;See List</button></a>
                             </div>
@@ -36,13 +36,13 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="form-group">
-                                        <input type="hidden" value="{{ $slider->id }}" name="id">
+                                        <input type="hidden" value="{{ $model->id }}" name="id">
                                         <label for="customFile">Image</label>
                                         <div class="custom-file">
                                           
                                             <input type="file" name="img_url" class="custom-file-input" id="customFile">
                                             <label class="custom-file-label" for="customFile">Choose file</label>
-                                            <img src="{{asset($slider->img_url)}}" alt="" height="150" width="150">
+                                            <img src="{{asset($model->img_url)}}" alt="" height="150" width="150">
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
     </section>
     <!-- /.content -->
     <script>
-        document.forms['editProductForm'].elements['img_url'].value={{$slider->img_url}}
+        document.forms['editProductForm'].elements['img_url'].value={{$model->img_url}}
     </script>
 
 @endsection
