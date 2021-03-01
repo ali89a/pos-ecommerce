@@ -25,7 +25,7 @@ Users List
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title" style="color:#115548;">Role List</h3>
+                        <h3 class="card-title" style="color:#115548;">Slider List</h3>
                         <div class="card-tools">
                             <a href="{{route('slider.create')}}"><button class="btn btn-sm btn-primary"><i
                                         class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp;Add Slider</button></a>
@@ -46,10 +46,10 @@ Users List
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>
-                                        <img src="{{asset($row->img_url) }}" alt="{{$row->id}}" height="100">
+                                        <img src="{{asset($row->img_url) }}" alt="{{$row->id}}" height="100" >
                                     </td>
                                     <td>
-                                        @can('User Edit')
+                                        {{-- @can('User Edit') --}}
                                                 <div class="btn-group">
                                                     <form method="POST"
                                                           action="{{ route('slider.destroy',$row->id)}}"
@@ -63,7 +63,7 @@ Users List
                                                         </button>
                                                     </form>
                                                 </div>
-                                        @endcan
+                                        {{-- @endcan --}}
                                     </td>
                                 </tr>
                                 @endforeach
