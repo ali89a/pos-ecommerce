@@ -46,8 +46,7 @@ Users List
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>
-                                        <img src="{{asset($row->img_url) }}" alt="{{$row->id}}" height="100"
-                                            width="100">
+                                        <img src="{{asset($row->img_url) }}" alt="{{$row->id}}" height="100">
                                     </td>
                                     <td>
                                         @can('User Edit')
