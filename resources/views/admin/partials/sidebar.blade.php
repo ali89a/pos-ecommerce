@@ -43,6 +43,14 @@
                     <p>Product</p>
                 </a>
             </li>
+
+            <li class="nav-item">
+                <a href="{{route('slider.index')}}" class="nav-link {{ (Request::segment(1) == 'slider' )?' active-color':''}}">
+                    <i class="nav-icon fa fa-adjust" aria-hidden="true"></i>
+                    <p>Slider</p>
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a href="{{route('label.index')}}" class="nav-link {{ (Request::segment(1) == 'label' )?' active-color':''}}">
                     <i class="nav-icon fa fa-barcode" aria-hidden="true"></i>
