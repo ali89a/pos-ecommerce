@@ -106,18 +106,24 @@
                                             <span>Add to cart </span>
                                         </button>
                                     </a>
-                                    <button type="button" class="wishlist btn-button" title="Add to Wish List"
+                                    {{-- <button type="button" class="wishlist btn-button" title="Add to Wish List"
                                         onclick="wishlist.add('60');"><i class="fa fa-heart"></i><span>Add to Wish
                                             List</span>
                                     </button>
                                     <button type="button" class="compare btn-button" title="Compare this Product "
                                         onclick="compare.add('60');"><i class="fa fa-refresh"></i><span>Compare this
                                             Product</span>
-                                    </button>
+                                    </button> --}}
                                     <!--quickview-->
-                                    <a class="iframe-link btn-button quickview quickview_handler visible-lg"
-                                        href="{{route('single.product',$product->slug)}}" title="Quick view" data-fancybox-type="iframe"><i
-                                            class="fa fa-eye"></i><span>Quick view</span></a>
+                                    {{-- <a class="iframe-link btn-button quickview quickview_handler visible-lg"
+                                        href="{{route('single.product',$product->slug)}}" title="Quick view"
+                                    data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                    --}}
+                                    <a class="btn-button quickview quickview_handler"
+                                        href="{{route('single.product',$product->slug)}}" title="Quick view"><i
+                                            class="fa fa-eye"></i>
+                                        <span>Quick view</span>
+                                    </a>
                                     <!--end quickview-->
                                 </div>
                             </div>
@@ -132,26 +138,34 @@
                                     </div>
                                     <h4><a href="product.html" title="Doenpuis consuat "
                                             target="_self">{{$product->name}}</a></h4>
-                                    <div class="price"> <span class="price-new">$66.00</span>
-                                        <span class="price-old">$76.00</span>
+                                    <div class="price"> <span class="price-new">ট {{$product->selling_price}}</span>
+                                        {{-- <span class="price-old">$76.00</span> --}}
                                     </div>
                                     <div class="description item-desc">
                                         <p>{{$product->description}}</p>
                                     </div>
                                     <div class="list-block">
-                                        <button class="addToCart btn-button" type="button" title="Add to Cart"
+                                        {{-- <button class="addToCart btn-button" type="button" title="Add to Cart"
                                             onclick="cart.add('101', '1');"><i class="fa fa-shopping-basket"></i>
-                                        </button>
-                                        <button class="wishlist btn-button" type="button" title="Add to Wish List"
+                                        </button> --}}
+                                        <a href="{{route('add.cart',$product->id)}}">
+                                            <button type="button" class="addToCart btn-button" title="Add to cart"
+                                                onclick="cart.add('60 ');"> <i class="fa fa-shopping-basket"></i>
+                                                <span>Add to cart </span>
+                                            </button>
+                                        </a>
+                                        {{-- <button class="wishlist btn-button" type="button" title="Add to Wish List"
                                             onclick="wishlist.add('101');"><i class="fa fa-heart"></i>
                                         </button>
                                         <button class="compare btn-button" type="button" title="Compare this Product"
                                             onclick="compare.add('101');"><i class="fa fa-refresh"></i>
-                                        </button>
-                                        <!--quickview--> <a
-                                            class="iframe-link btn-button quickview quickview_handler visible-lg"
-                                            href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i
-                                                class="fa fa-eye"></i></a>
+                                        </button> --}}
+
+                                        <a class="btn-button quickview quickview_handler"
+                                            href="{{route('single.product',$product->slug)}}" title="Quick view"><i
+                                                class="fa fa-eye"></i>
+                                            <span>Quick view</span>
+                                        </a>
                                         <!--end quickview-->
                                     </div>
                                 </div>

@@ -78,8 +78,9 @@
                                                     </div>
                                                     <!--quickview-->
                                                     <div class="so-quickview">
-                                                        <a class="btn-button quickview quickview_handler" href="{{route('single.product',$publishedProduct->slug)}}" title="Quick view"><i class="fa fa-eye"></i><span>Quick
-                                                                view</span></a>
+                                                        <a class="btn-button quickview quickview_handler" href="{{route('single.product',$publishedProduct->slug)}}" title="Quick view"><i class="fa fa-eye"></i>
+                                                            <span>Quick view</span>
+                                                        </a>
                                                     </div>
                                                     <!--end quickview-->
                                                 </div>
