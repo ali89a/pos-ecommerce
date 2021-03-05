@@ -102,6 +102,8 @@
                             </div>
                         </div>
                         <!-- //end Logo -->
+
+                        
                         <!-- Search -->
                         <div class="middle2 col-lg-7 col-md-6">
                             <div class="search-header-w">
