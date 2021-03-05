@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\Product;
+use Illuminate\Support\Facades\DB;
 
 class FrontController extends Controller
 {
@@ -13,37 +14,37 @@ class FrontController extends Controller
         $offer_zone_products = Product::where('status', 'active')->where('discount', '>', 0)->get();
         $feature_products = Product::where('status', 'active')->where('feature', 'active')->get();
         $top_products = Product::where('status', 'active')->where('top', 'active')->get();
-        return view('front-home', compact('best_seller_products', 'feature_products','offer_zone_products','top_products'));
+        return view('front-home', compact('best_seller_products', 'feature_products', 'offer_zone_products', 'top_products'));
     }
     public function bestSeller()
     {
         $best_seller_products = Product::where('status', 'active')->where('best_seller', 'active')->get();
-        return view('front.best-seller',compact('best_seller_products'));
+        return view('front.best-seller', compact('best_seller_products'));
     }
     public function singleProduct($slug)
     {
         $product = Product::where('slug', $slug)->first();
-        return view('front.single-product',compact('product'));
+        return view('front.single-product', compact('product'));
     }
     public function quickProduct($slug)
     {
         $product = Product::where('slug', $slug)->first();
-        return view('quickview',compact('product'));
+        return view('quickview', compact('product'));
     }
     public function featureProduct()
     {
         $feature_products = Product::where('status', 'active')->where('feature', 'active')->get();
-        return view('front.feature-product',compact('feature_products'));
+        return view('front.feature-product', compact('feature_products'));
     }
     public function newArrival()
     {
         $new_products = Product::where('status', 'active')->where('best_seller', 'active')->get();
-        return view('front.new-arrival',compact('new_products'));
+        return view('front.new-arrival', compact('new_products'));
     }
     public function offerZone()
     {
         $offer_zone_products = Product::where('status', 'active')->where('discount', '>', 0)->get();
-        return view('front.offer-zone',compact('offer_zone_products'));
+        return view('front.offer-zone', compact('offer_zone_products'));
     }
     public function about()
     {
@@ -56,7 +57,7 @@ class FrontController extends Controller
     public function shopPage()
     {
         $all_products = Product::where('status', 'active')->get();
-        return view('front.shop-page',compact('all_products'));
+        return view('front.shop-page', compact('all_products'));
     }
     public function brand()
     {
@@ -90,5 +91,22 @@ class FrontController extends Controller
 
 
 
-
+    public function searchResult(Request $request)
+    {
+        $text = $request->input('text');
+        // search the members table
+        $products = DB::table('products')->Where('name', 'like', '%' . $text . '%')->get();
+        // return the results
+        $output = '';
+        foreach ($products as  $product) {
+            $output .= '
+                 <ul>
+                 <li style="padding:10px">
+                  <a href="' . url('single-product/' . $product->slug) . '">' . $product->name . '</a>
+                 </li>
+                 </ul>
+                 ';
+        }
+        echo  $output;
+    }
 }

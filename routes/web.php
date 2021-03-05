@@ -26,6 +26,11 @@ Route::get('/clear-cache', function () {
 // });
 
 Route::get('/', 'FrontController@index')->name('front');
+
+Route::get('/search-results', 'FrontController@searchResult');
+
+
+
 Route::get('/add-to-cart/{slug}', 'CartController@addCart')->name('add.cart');
 Route::get('/shopping-cart', 'CartController@shoppingCart')->name('shopping.cart');
 Route::get('/clear-cart', 'CartController@clearCart')->name('clear.cart');

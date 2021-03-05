@@ -5,8 +5,10 @@
 <head>
     <title>Gauwal</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="html5 template, best html5 template, best html template, html5 basic template, multipurpose html5 template, multipurpose html template, creative html templates, creative html5 templates" />
-    <meta name="description" content="eMarket is a powerful Multi-purpose HTML5 Template with clean and user friendly design. It is definite a great starter for any eCommerce web project." />
+    <meta name="keywords"
+        content="html5 template, best html5 template, best html template, html5 basic template, multipurpose html5 template, multipurpose html template, creative html templates, creative html5 templates" />
+    <meta name="description"
+        content="eMarket is a powerful Multi-purpose HTML5 Template with clean and user friendly design. It is definite a great starter for any eCommerce web project." />
     <meta name="author" content="Magentech">
     <meta name="robots" content="index, follow" />
     <!-- Mobile specific metas=========== -->
@@ -31,8 +33,8 @@
     <link href="{{ asset('front') }}/css/header/header.css" rel="stylesheet">
     <link id="color_scheme" href="{{ asset('front') }}/css/home.css" rel="stylesheet">
     <link href="{{ asset('front') }}/css/responsive.css" rel="stylesheet">
-    
-<link rel="stylesheet" type="text/css" href="{{ URL::asset('toastr/toastr.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('toastr/toastr.min.css')}}">
     <!-- Google web fonts====== -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
@@ -53,7 +55,8 @@
                     <div class="row">
                         <div class="header-top-left col-lg-6 col-md-4 col-sm-6 col-xs-7">
                             <ul class="top-link list-inline">
-                                <li class="checkout hidden-sm hidden-xs"><a href="#" class="btn-link" title="mobile "><span><i class="fa fa-phone"></i>+880 1977-722531 </span></a>
+                                <li class="checkout hidden-sm hidden-xs"><a href="#" class="btn-link"
+                                        title="mobile "><span><i class="fa fa-phone"></i>+880 1977-722531 </span></a>
                                 </li>
                             </ul>
                         </div>
@@ -76,7 +79,8 @@
                                         <!-- <i class="fa fa-heart"></i> -->Wish List (0)
                                     </a>
                                 </li>
-                                <li class="checkout hidden-sm hidden-xs"><a href="#" class="btn-link" title="Checkout "><span><i class="fa fa-check-square-o"></i>Checkout </span></a>
+                                <li class="checkout hidden-sm hidden-xs"><a href="#" class="btn-link"
+                                        title="Checkout "><span><i class="fa fa-check-square-o"></i>Checkout </span></a>
                                 </li>
                                 <li class="hidden-xs"><a href="#"><i class="fa fa-lock"></i>Login</a>
                                 </li>
@@ -104,44 +108,28 @@
                                 <div class="icon-search hidden-lg hidden-md hidden-sm"><i class="fa fa-search"></i>
                                 </div>
                                 <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
-                                    <form method="GET" action="#">
+                                    <form method="GET" action="">
                                         <div id="search0" class="search input-group form-group">
-                                            <div class="select_category filter_type  icon-select hidden-sm hidden-xs">
-                                                <select class="no-border" name="category_id">
-                                                    <option value="0">All Categories</option>
-
-
-
-
-
-                                                    @foreach($category as $catName )
-
-                                                    <option value="78">{{$catName->name}}</option>
-
-                                                    @endforeach
-
-
-
-
-
-                                                </select>
-                                            </div>
-                                            <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Keyword here..." name="search">
-                                            <span class="input-group-btn">
-                                                <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
-                                            </span>
+                                            <input class="autosearch-input form-control" type="text" value="" size="50"
+                                                autocomplete="off" placeholder="Keyword here..." id="txtSearch"
+                                                name="txtSearch">
                                         </div>
                                         <input type="hidden" name="route" value="product/search" />
                                     </form>
+                                    <div id="result" style="background-color: #fff">
+                                    </div>
                                 </div>
+                                <div id="suggestions" style="margin-left:-35px;display:block"></div>
                             </div>
                         </div>
+
                         <!-- //end Search -->
                         <div class="middle3 col-lg-3 col-md-3">
                             <!--cart-->
                             <div class="shopping_cart">
                                 <div id="cart" class="btn-shopping-cart">
-                                    <a data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <a data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle"
+                                        data-toggle="dropdown" aria-expanded="true">
                                         <div class="shopcart">
                                             <span class="icon-c">
                                                 <i class="fa fa-shopping-bag"></i>
@@ -151,7 +139,8 @@
                                                     My cart
                                                 </p>
                                                 <span class="total-shopping-cart cart-total-full">
-                                                    <span class="items_cart">{{ Cart::content()->count() }}</span><span class="items_cart2">
+                                                    <span class="items_cart">{{ Cart::content()->count() }}</span><span
+                                                        class="items_cart2">
                                                         item(s)</span>
                                                 </span>
                                             </div>
@@ -172,10 +161,13 @@
                                                     <tr>
                                                         <td class="text-center" style="width:70px">
                                                             <a href="{{route('single.product',$row->options->slug)}}">
-                                                                <img src="{{asset('storage/'.$row->options->img_url)}}" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
+                                                                <img src="{{asset('storage/'.$row->options->img_url)}}"
+                                                                    style="width:70px" alt="Yutculpa ullamcon"
+                                                                    title="Yutculpa ullamco" class="preview">
                                                             </a>
                                                         </td>
-                                                        <td class="text-left"> <a class="cart_product_name" href="{{route('single.product',$row->options->slug)}}"><?php echo $row->name; ?></a>
+                                                        <td class="text-left"> <a class="cart_product_name"
+                                                                href="{{route('single.product',$row->options->slug)}}"><?php echo $row->name; ?></a>
                                                         </td>
                                                         <td class="text-center">x<?php echo $row->qty; ?></td>
                                                         <td class="text-center"><?php echo $row->price; ?></td>
@@ -183,7 +175,8 @@
                                                             <a href="#" class="fa fa-edit"></a>
                                                         </td>
                                                         <td class="text-right">
-                                                            <a href="{{route('remove.product',$row->rowId )}}" class="fa fa-times fa-delete"></a>
+                                                            <a href="{{route('remove.product',$row->rowId )}}"
+                                                                class="fa fa-times fa-delete"></a>
                                                         </td>
                                                     </tr>
                                                     @php
@@ -205,8 +198,12 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                                <p class="text-right"> <a class="btn view-cart" href="{{ route('shopping.cart') }}"><i class="fa fa-shopping-cart"></i>View
-                                                        Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="{{ route('checkout') }}"><i class="fa fa-share"></i>Checkout</a>
+                                                <p class="text-right"> <a class="btn view-cart"
+                                                        href="{{ route('shopping.cart') }}"><i
+                                                            class="fa fa-shopping-cart"></i>View
+                                                        Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart"
+                                                        href="{{ route('checkout') }}"><i
+                                                            class="fa fa-share"></i>Checkout</a>
                                                 </p>
                                             </div>
                                         </li>
@@ -234,7 +231,8 @@
                                 <nav class="navbar-default">
                                     <div class=" container-megamenu  horizontal open ">
                                         <div class="navbar-header">
-                                            <button type="button" id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
+                                            <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
                                                 <span class="icon-bar"></span>
                                                 <span class="icon-bar"></span>
                                                 <span class="icon-bar"></span>
@@ -244,7 +242,8 @@
                                             <span id="remove-megamenu" class="fa fa-times"></span>
                                             <div class="megamenu-pattern">
                                                 <div class="container-mega">
-                                                    <ul class="megamenu" data-transition="slide" data-animationtime="250">
+                                                    <ul class="megamenu" data-transition="slide"
+                                                        data-animationtime="250">
                                                         <li class="home hover">
                                                             <a href="{{ route('front') }}">Home</a>
                                                         </li>
@@ -255,7 +254,9 @@
                                                             <p class="close-menu"></p>
                                                             <a href="{{ route('new.arrival') }}" class="clearfix">
                                                                 <strong>New Arrival</strong>
-                                                                <img class="label-hot" src="{{ asset('front') }}/image/catalog/menu/new-icon.png" alt="icon items">
+                                                                <img class="label-hot"
+                                                                    src="{{ asset('front') }}/image/catalog/menu/new-icon.png"
+                                                                    alt="icon items">
                                                             </a>
                                                         </li>
                                                         <li class="">
@@ -310,13 +311,16 @@
                                     news straight to your inbox.</div>
                             </div>
                             <div class="block_content">
-                                <form method="post" id="signup" name="signup" class="form-group form-inline signup send-mail">
+                                <form method="post" id="signup" name="signup"
+                                    class="form-group form-inline signup send-mail">
                                     <div class="form-group">
                                         <div class="input-box">
-                                            <input type="email" placeholder="Your email address..." value="" class="form-control" id="txtemail" name="txtemail" size="55">
+                                            <input type="email" placeholder="Your email address..." value=""
+                                                class="form-control" id="txtemail" name="txtemail" size="55">
                                         </div>
                                         <div class="subcribe">
-                                            <button class="btn btn-primary btn-default font-title" type="submit" onclick="return subscribe_newsletter();" name="submit">
+                                            <button class="btn btn-primary btn-default font-title" type="submit"
+                                                onclick="return subscribe_newsletter();" name="submit">
                                                 Subscribe
                                             </button>
                                         </div>
@@ -337,9 +341,11 @@
                                 <div class="module">
                                     <h3 class="modtitle">Contact Info</h3>
                                     <ul>
-                                        <li class="adres"><i class="fa fa-map-marker">1</i>Address : 17/1, Monipuripara, Sangshad Avenue, Dhaka-1215 Bangladesh
+                                        <li class="adres"><i class="fa fa-map-marker">1</i>Address : 17/1, Monipuripara,
+                                            Sangshad Avenue, Dhaka-1215 Bangladesh
                                         </li>
-                                        <li class="mail"><i class="fa fa-envelope">2</i>Email : info.gauwal@gmail.com</li>
+                                        <li class="mail"><i class="fa fa-envelope">2</i>Email : info.gauwal@gmail.com
+                                        </li>
                                         <li class="phone"><i class="fa fa-phone">3</i>Hotline : +880 1977-722531</li>
                                     </ul>
                                 </div>
@@ -423,15 +429,20 @@
                             <div class="socials-w module">
                                 <h3 class="modtitle">Follow Us:</h3>
                                 <ul class="socials">
-                                    <li class="facebook"><a class="_blank" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <li class="facebook"><a class="_blank" href="#" target="_blank"><i
+                                                class="fa fa-facebook"></i></a>
                                     </li>
-                                    <li class="twitter"><a class="_blank" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <li class="twitter"><a class="_blank" href="#" target="_blank"><i
+                                                class="fa fa-twitter"></i></a>
                                     </li>
-                                    <li class="google_plus"><a class="_blank" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                    <li class="google_plus"><a class="_blank" href="#" target="_blank"><i
+                                                class="fa fa-google-plus"></i></a>
                                     </li>
-                                    <li class="pinterest"><a class="_blank" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                    <li class="pinterest"><a class="_blank" href="#" target="_blank"><i
+                                                class="fa fa-pinterest"></i></a>
                                     </li>
-                                    <li class="youtube"><a class="_blank" href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                                    <li class="youtube"><a class="_blank" href="#" target="_blank"><i
+                                                class="fa fa-youtube-play"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -444,7 +455,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 copyright-w">
-                            <div class="copyright">Gauwal © 2021. All Rights Reserved. Developed by <a href="#" target="_blank">Mohammad Ali</a>
+                            <div class="copyright">Gauwal © 2021. All Rights Reserved. Developed by <a href="#"
+                                    target="_blank">Mohammad Ali</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 payment-w">
@@ -480,9 +492,36 @@
     <script type="text/javascript" src="{{ asset('front') }}/js/themejs/so_megamenu.js"></script>
     <!-- <script type="text/javascript" src="{{ asset('front') }}/js/themejs/addtocart.js"></script> -->
     <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+
+
+
+
+
+    <!-- Ajax search code -->
+
+    <script type="application/javascript">
+        $(document).ready(function(){
+			$('#txtSearch').on('keyup', function(){
+				var text = $('#txtSearch').val();
+			
+				$.ajax({
+					type:"GET",
+					url: '/search-results',
+					data: {text: text},
+					success: function(data) {
+						console.log(data);
+						$('#result').html(data);
+					}
+				});
+			});
+		  });
+    </script>
+
+
+
     {!! Toastr::message() !!}
-  
-    
+
+
     @stack('js')
 </body>
 
