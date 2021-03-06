@@ -140,34 +140,38 @@
 
                             <div class="form-group box-info-product" id="vue_app">
                                 <div class="option quantity">
-                                    <div class="input-group quantity-control" unselectable="on"
+                                    {{-- <div class="input-group quantity-control" unselectable="on"
                                         style="-webkit-user-select: none;">
                                         <label>Qty</label>
                                         <input class="form-control" type="text" name="quantity" value="1">
                                         <input type="hidden" name="product_id" value="50">
                                         <span class="input-group-addon product_quantity_down">−</span>
                                         <span class="input-group-addon product_quantity_up">+</span>
-                                    </div>
+                                    </div> --}}
+
+                                    <form action="{{route('addTocart')}}" method="POST">
+                                        {{ csrf_field() }}
+                                        <div class="color-quality">
+                                            <h6>Quantity :</h6>
+                                            <div class="quantity">
+                                                <input type="number" name="qty" value="1" min="1">
+                                                <input type="hidden" name="id" value="{{$product->id}}">
+                                            </div>
+                                        </div>
+                                       <br/>
+                                        <div class="cart">
+                                            <input type="submit" name="btn" class="my-cart-b item_add" value="Add to Cart">
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="cart">
+                                {{-- <div class="cart">
                                     <a href="{{route('add.cart',$product->id)}}">
                                         <input type="button" data-toggle="tooltip" title="" value="Add to Cart"
                                             data-loading-text="Loading..." id="button-cart" class="btn btn-mega btn-lg"
                                             @click="add_cart" data-original-title="Add to Cart">
                                     </a>
-                                </div>
-                                <div class="add-to-links wish_comp">
-                                    <!-- <ul class="blank list-inline">
-                                        <li class="wishlist">
-                                            <a class="icon" data-toggle="tooltip" title="" onclick="wishlist.add('50');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i>
-                                            </a>
-                                        </li>
-                                        <li class="compare">
-                                            <a class="icon" data-toggle="tooltip" title="" onclick="compare.add('50');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i>
-                                            </a>
-                                        </li>
-                                    </ul> -->
-                                </div>
+                                </div> --}}
+                              
 
                             </div>
 

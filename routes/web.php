@@ -28,8 +28,10 @@ Route::get('/clear-cache', function () {
 Route::get('/', 'FrontController@index')->name('front');
 
 Route::get('/search-results', 'FrontController@searchResult');
-
-
+Route::post('/cart/add', [
+    'uses'  =>  'CartController@addToCart',
+    'as'    =>  'addTocart'
+]);
 
 Route::get('/add-to-cart/{slug}', 'CartController@addCart')->name('add.cart');
 Route::get('/shopping-cart', 'CartController@shoppingCart')->name('shopping.cart');

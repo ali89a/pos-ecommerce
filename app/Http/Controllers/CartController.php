@@ -30,6 +30,24 @@ class CartController extends Controller
         ]);
         return redirect()->route('shopping.cart');
     }
+
+    public function addToCart(Request $request){
+        $product = Product::find($request->id);
+        Cart::add([
+            'id' => $request->id,
+            'name' => $product->name, 
+            'price' => $product->selling_price,
+            'weight' => 100,
+            'qty' => $request->qty, 
+            'options' => [
+                'slug' => $product->slug,
+                'img_url' => $product->img_url,
+            ] 
+        ]);
+
+        return redirect()->route('shopping.cart');
+    }
+
     public function clearCart()
     {
 
