@@ -85,7 +85,7 @@
                                                     ৳</span>
                                             </div>
                                             @endif
-                                            <a href="#" target="_self" title="product">
+                                            <a href="{{route('single.product',$publishedProduct->slug)}}" target="_self" title="product">
                                                 <img src="{{asset('storage/'.$publishedProduct->img_url)}}"
                                                     alt="{{$publishedProduct->name}}" class="img-responsive">
                                             </a>
