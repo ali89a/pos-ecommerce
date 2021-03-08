@@ -20,6 +20,7 @@ class CreateCustomersTable extends Migration
             $table->string('mobile')->nullable();
             $table->string('address', 100)->nullable();
             $table->string('email', 100)->nullable();
+            $table->string('password')->nullable();
             $table->string('website', 100)->nullable();
             $table->Integer('company_id')->unsigned()->nullable();
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');

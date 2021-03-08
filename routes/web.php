@@ -33,6 +33,37 @@ Route::post('/cart/add', [
     'as'    =>  'addTocart'
 ]);
 
+Route::get('/checkoutReg', [
+    'uses'  =>  'CheckoutController@index',
+    'as'    =>  'checkout-reg'
+]);
+Route::post('/customer/registration', [
+    'uses'  =>  'CheckoutController@customerSignUp',
+    'as'    =>  'customer-sign-up'
+]);
+Route::post('/checkout/customer-login', [
+    'uses'  =>  'CheckoutController@customerLoginCheck',
+    'as'    =>  'customer-login'
+]);
+Route::get('/checkout/shipping', [
+    'uses'  =>  'CheckoutController@shippingForm',
+    'as'    =>  'checkout-shipping'
+]);
+Route::post('/shipping/save', [
+    'uses'  =>  'CheckoutController@saveShippingInfo',
+    'as'    =>  'new-shipping'
+]);
+Route::get('/checkout/payment', [
+    'uses'  =>  'CheckoutController@paymentForm',
+    'as'    =>  'checkout-payment'
+]);
+Route::post('/checkout/order', [
+    'uses'  =>  'CheckoutController@newOrder',
+    'as'    =>  'new-order'
+]);
+
+
+
 Route::get('/add-to-cart/{slug}', 'CartController@addCart')->name('add.cart');
 Route::get('/shopping-cart', 'CartController@shoppingCart')->name('shopping.cart');
 Route::get('/clear-cart', 'CartController@clearCart')->name('clear.cart');
