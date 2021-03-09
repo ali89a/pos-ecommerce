@@ -74,14 +74,32 @@
                             <tr>
                                 <td class="text-right"><strong>Sub-Total:</strong></td>
                                 <td class="text-right">&#x9F3;<?php echo Cart::subtotal(); ?></td>
+                                {{Session::put('subtotal',$total)}}
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="buttons clearfix">
-                <div class="pull-left"><a href="{{ route('shop.page') }}" class="btn btn-default">Continue Shopping</a></div>
-                <div class="pull-right"><a href="{{ route('checkout') }}" class="btn btn-primary">Checkout</a></div>
+                {{-- <div class="pull-left"><a href="{{ route('shop.page') }}" class="btn btn-default">Continue Shopping</a></div>
+                <div class="pull-right"><a href="{{ route('checkout') }}" class="btn btn-primary">Checkout</a></div> --}}
+
+                {{-- <div class="row">
+                    <div class="col-md-11 col-md-offset-1"> --}}
+                        @if(Session::get('customerId') && Session::get('shippingId'))
+                        <a href="{{route('checkout-payment')}}"
+                            class="btn btn-warning pull-right">Checkout</a>
+                        @elseif(Session::get('customerId'))
+                        <a href="{{route('checkout-shipping')}}"
+                            class="btn btn-warning pull-right">Checkout</a>
+                        @else
+                        <a href="{{route('checkout-reg')}}"
+                            class="btn btn-warning pull-right">Checkout</a>
+                        @endif
+                        <a href="" class="btn btn-warning">Continue Shopping</a>
+                    {{-- </div>
+                </div> --}}
+                
             </div>
         </div>
     </div>

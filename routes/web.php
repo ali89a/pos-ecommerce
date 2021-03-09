@@ -62,10 +62,18 @@ Route::post('/checkout/order', [
     'as'    =>  'new-order'
 ]);
 
+Route::get('/complete/order', [
+    'uses'  =>  'CheckoutController@completeOrder',
+    'as'    =>  'complete-order'
+]);
+
+
 
 
 Route::get('/add-to-cart/{slug}', 'CartController@addCart')->name('add.cart');
+
 Route::get('/shopping-cart', 'CartController@shoppingCart')->name('shopping.cart');
+
 Route::get('/clear-cart', 'CartController@clearCart')->name('clear.cart');
 Route::post('/update-cart', 'CartController@updateCart')->name('update.cart');
 Route::get('/remove-product/{slug}', 'CartController@removeProduct')->name('remove.product');
