@@ -82,7 +82,19 @@
                                 <li class="checkout hidden-sm hidden-xs"><a href="#" class="btn-link"
                                         title="Checkout "><span><i class="fa fa-check-square-o"></i>Checkout </span></a>
                                 </li>
-                                <li class="hidden-xs"><a href="#"><i class="fa fa-lock"></i>Login</a>
+                                <li class="hidden-xs">
+                                    {{-- <a href="{{ url('/checkoutReg') }}"><i class="fa fa-lock"></i>Login</a> --}}
+
+                                    @if(Session::get('customerId') && Session::get('shippingId'))
+                                    <a href="{{route('checkout-payment')}}"
+                                        class="fa fa-lock">Payment</a>
+                                    @elseif(Session::get('customerId'))
+                                    <a href="{{route('checkout-shipping')}}"
+                                        class="fa fa-lock">Payment</a>
+                                    @else
+                                    <a href="{{route('checkout-reg')}}" class="fa fa-lock">Register Here</a>
+                                    @endif
+                                   
                                 </li>
                             </ul>
                         </div>
@@ -103,7 +115,7 @@
                         </div>
                         <!-- //end Logo -->
 
-                        
+
                         <!-- Search -->
                         <div class="middle2 col-lg-7 col-md-6">
                             <div class="search-header-w">
